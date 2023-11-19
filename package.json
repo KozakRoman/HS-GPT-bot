@@ -1,0 +1,15 @@
+{
+  "name": "hs-gpt-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env":"export $(cat .env | xargs)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.19.0"
+  }
+}

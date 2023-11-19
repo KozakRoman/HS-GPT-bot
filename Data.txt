@@ -1,0 +1,252 @@
+# How to Use BANT to Qualify Prospects in 2022
+During the sales process, you’ll discover people within the company who have the authority to make decisions. These individuals are also more likely to have insight into the team’s budget to purchase what you sell. That means, along the way, you’ll gather more information about how qualified the prospect really is.
+
+
+
+Lead qualification is one of the hardest parts of a salesperson’s job. Even though there’s technology available to help, there are still many qualification questions that a salesperson must ask during a call with a prospect.![](https://lh5.googleusercontent.com/LqbmbGMnFtCE1PHXYrETwdg-VpbEfl7wTS0CknD5KlRG_3KHN0Tnrmxi8eR2sCRktsS1PcHrBrcFwu47gcA0WNhy-ipLIrJUPqfluTQSCl9sGRtx1rdL1Jf3r3jKQ_lN3D1j78w9ttcxQ3qyQto4S-w)
+
+But what if you could structure that information-gathering process in a way that makes sense for your sales cycle? The good news is, you can! You’d use a tried-and-true methodology called BANT.
+
+
+
+What is BANT?
+-------------
+
+BANT is a sales qualification methodology that helps salespeople determine whether a prospect is a good fit based on their budget, internal influence/ability to buy, need for the product, and purchase timeline.
+
+This framework was first developed by IBM in the 1950s and is now included as part of the company’s Business Agility Solution Identification Guide. It worked well for the company and others that adopted it because it made the sales process more efficient.
+
+From the company’s perspective, the sales reps could learn all the pertinent information upfront to determine if the prospect was a good fit for its products. If the prospect was not a fit, they would be disqualified from the sales process.
+
+Companies like IBM used BANT to quickly qualify leads, making more of their time available for selling to qualified prospects.
+
+What does BANT stand for?
+-------------------------
+
+The acronym BANT stands for: budget — how much money the prospect is able and willing to spend; authority — the ultimate decision-maker; need — whether the prospect has a problem your business can solve; and, timing — whether there is urgency to purchase your product or service.
+
+!what does BANT stand for graphic explaining each element
+
+**B**udget - How much is the prospect willing and able to spend on your solution?
+
+**A**uthority - Who is the authority figure in this sale? Who makes the ultimate decision?
+
+**N**eed - Does the prospect have a true need for my product? Is this a universal need on the team?
+
+**T**imeline - How much time will the prospect need to make a purchasing decision?
+
+BANT is a significant part of the sales process because it helps sales reps qualify leads during the discovery call. Rather than waiting days or weeks to qualify leads using a score derived from the prospect’s behavior and engagement with marketing and sales materials, the sales team can get detailed information from the prospect about their budget, stakeholders, need, and timeframe.
+
+How to Use the BANT Sales Framework and Process
+-----------------------------------------------
+
+1.  Understand the prospect’s budget beyond the dollar amount.
+2.  Identify stakeholders in the decision-making process.
+3.  Determine the importance of the problem.
+4.  Prepare a timeline for the sales process.
+5.  Stay informed through multiple channels.
+6.  Use digital tools to track your progress.
+
+!how to use the bant sales framework and progress graphic explaining all six elements
+
+### 1\. Understand the prospect’s budget beyond the dollar amount.
+
+When reps were selling licenses in the old days, qualifying based on financial need made sense. If you use a subscription model, then budget probably won’t be a blocker for most companies.
+
+But now, most SaaS companies, for example, charge anywhere from $10 for basic plans to tens of thousands of dollars per month for enterprise plans. If you sell a SaaS product, you can overcome the price obstacle by asking about the prospect's expected ROI. If that aligns with your price, you have good reason to qualify the prospect on budget.
+
+### 2\. Identify stakeholders in the decision-making process.
+
+Most decisions are now made by a group rather than one person. There’s an average of three stakeholder groups involved in every deal. Even if one person is responsible for signing the contract, you’ll need to convince most of their team.
+
+Map out everyone who is involved in the process: Their job titles, decision-making role, priorities, and how you can get access to them (asking your champion to set up a meeting, reaching out to them directly. etc.) The more contacts you have, the more control you’ll wield — and the less chance this opportunity will slip through your fingers.
+
+### 3\. Determine the importance of the problem.
+
+Next, figure out how important this problem is to the prospect. While you’re asking your prospect the questions we recommended earlier, ask yourself the following questions: Are they highly motivated to solve it? What happens if they don’t? Is there a different initiative they care about more that will compete for their energy, attention, and decision-making capital?
+
+A prospect might say they have a particular need and may very well mean it, but the team’s or executive leadership’s priorities may be different. This will inevitably cause kinks in the sales process down the road. Do your best to uncover your prospect, team, and leaders' needs as early as possible.
+
+### 4\. Prepare a timeline for the sales process.
+
+You know the budget, who the decision-makers are, and the need they have for your product. Now it’s time to find out how quickly their organization needs to make a decision.
+
+Identifying whether you're looking at months of red tape and approvals or a simple one-pitch-and-a-close type of deal can help you plan your pipeline and prepare for the close.
+
+### 5\. Stay informed through multiple channels.
+
+While this step doesn’t fall into one particular step of BANT, it’s an important one that will help you stay ahead of any objections, delays, or concerns with your prospect. Follow their social media, sign up for their newsletter, and, for enterprise prospects, attend events they might have that are open to the public.
+
+Keeping a pulse on the deals, you have in the pipeline (outside of the times you’re meeting with them) can help you uncover new needs they have that your product can solve. You may also discover additional stakeholders you’ll communicate with later in the sales process.
+
+Staying in the loop informally can help you qualify a prospect using the information you gather yourself. This will give you a holistic picture of the prospect to determine whether they’ll be a great fit for your product.
+
+### 6\. Use digital tools to track your progress.
+
+Using digital tools that keep track of your pipeline and manage relationships will be helpful as you implement BANT into your sales process. As you balance multiple prospects concurrently, you’ll be able to discern exactly where you left off with each one and how far they have to go before the deal is closed.
+
+HubSpot’s Sales Hub software can help you start conversations, deepen relationships, and manage your pipeline using the BANT framework.
+
+
+
+Execute the BANT Framework With Sales Hub
+
+How NOT to use BANT
+-------------------
+
+BANT has fallen out of favor with a few sales experts. Opponents of BANT find that the information gathered in this framework is helpful, but it’s discovered much too late in the sales process. Others simply prefer organizing their topics differently, thus using other frameworks like GCPT.
+
+I’m here to tell you that the order of the framework isn’t an issue. You can (and should!) use BANT in the order that creates the best sales experience for the prospect.
+
+BANT fails when salespeople use it as a checklist. Instead of having a natural conversation, they ask prospects a series of unrelated questions without truly listening to their responses.
+
+Here’s an example:
+
+_**Rep:** “Do you have a budget set aside for this?”_
+
+_**Prospect:** “Not yet, but it should be finalized on Tuesday.”_
+
+_**Rep:** “Great. And who will be signing off on this deal?”_
+
+_**Prospect:** “My manager Sheila.”_
+
+_**Rep:** “And you’ll be using Spartan to organize customer events around the country, which currently you do not have software for. It seems like your current system is hard to manage and scale.”_
+
+_**Prospect:** “Yes, that’s correct.”_
+
+_**Rep:** “Is there a specific date you’d like to have a solution in place for?”_
+
+_**Prospect:** “Probably sometime in the spring.”_
+
+_**Rep:** “Okay, great. I think the next step is arranging a demo between you and an events specialist — what do you think?”_
+
+_**Prospect:** “I’d like to look around a bit more first … I’ll shoot you an email in a few weeks.”_
+
+The salesperson is never going to hear from that prospect again.
+
+So what went wrong?
+
+First, this was an interrogation, not a two-way dialogue. No one enjoys being quizzed. Unfortunately, BANT often causes reps to stick to a memorized list rather than asking layered questions that build on each other.
+
+Second, the rep missed several opportunities to dig deeper. They didn’t learn anything about the decision-maker, Sheila; the budget approval process; or the reason for a spring implementation.
+
+To use BANT successfully, think of it as a framework rather than a to-do list. You need to qualify them based on all four characteristics, but you don’t need to do them in a particular order. In fact, you should tailor the process to every prospect you qualify.
+
+BANT Lead Qualification Questions
+---------------------------------
+
+We learned earlier that BANT is more than a checklist. This framework helps you discover a lot of important information about a prospect in a short amount of time while also building a relationship with them. The key to making BANT work for you is asking thoughtful questions that flow together in a conversation.
+
+Below are some of the best questions to ask a prospect for each stage in the BANT framework. Remember, you’re having a conversation, so vary the order and the wording as you need to.
+
+### Budget
+
+#### 1\. What do you currently spend now on this problem or need?
+
+Here, you’re trying to discover if the company has already purchased what you sell. If they haven’t, you’ll need to sell them on your product category and your product.
+
+#### 2\. We’ve determined that your team is losing X amount per \[week, quarter, year\] on this problem. How does that compare to the budget you’ve set aside?
+
+See if the prospect realizes how expensive not implementing your solution is.
+
+#### 3\. We estimate that your team could potentially gain X amount per \[week, quarter, year\] by making this \[change, investment\]. How does that compare to the budget you’ve set aside?
+
+The prospect may want to grow rather than prevent loss. Frame the question in terms of potential for gain.
+
+#### 4\. What team’s budget would this tool fall within?
+
+With this question, you can determine potential stakeholders you’ll need to speak with during later stages of the sales process.
+
+#### 5\. How much would it cost to build the system by yourself?
+
+You’ll uncover whether the prospect can solve this problem in-house or if they are looking for an external solution.
+
+#### 6\. How much would it cost if you haven’t fixed this issue in five years?
+
+This question is two-fold — you’re reminding the prospect that there is a cost to not making a decision and you’re determining how much their need will cost them if they don’t find a solution. You can help the prospect understand their ROI with the answer to this question.
+
+#### 7\. How heavily will price factor into your decision?
+
+This standard budget question helps you determine whether you need to justify the value compared to the price of your product.
+
+#### 8\. Have you identified a budget range for this purchase?
+
+Here’s another standard budget question to determine if the prospect has done research on the price range for your product category.
+
+#### 9\. What’s the ROI you’re hoping to see?
+
+This question will help you position your product in a way that meets the prospect’s goals.
+
+### Authority
+
+#### 10\. Who will be using the product?
+
+This question won’t always give you the decision-maker, but it will tell you who else might be involved in the buying decision.
+
+#### 11\. When was the last time you bought a similar product? How did the decision-making process go?
+
+If there were significant pain points or things the prospect liked about their last purchase, you can eliminate or incorporate those into your sales process.
+
+#### 12\. This is normally the stage where my customer brings in \[the head of Finance, the other stakeholders, their manager\] to \[discuss X, get their perspective on Y\]. Do you want to invite \[Z person/people\] to our next meeting?
+
+This question can save you and the prospect time. Rather than discovering you don’t have the right stakeholders on the call, you can work around their schedule in advance.
+
+#### 13\. Will anyone else be involved in this decision?
+
+This question opens up another opportunity to invite additional stakeholders into the conversation early on.
+
+### Need
+
+#### 14\. When did you identify \[problem, opportunity\]?
+
+By asking this question, you’ll learn how long the prospect has been experiencing this problem.
+
+#### 15\. What steps have you already taken to address it?
+
+You can assess whether your solution will be successful or if there’s another way they can solve this problem by using your solution in conjunction with another one, or if they’re better off with a different solution entirely.
+
+#### 16\. How important is addressing this to your personal goals at \[company\]?
+
+If the need is tied to a goal the prospect has at their company, they’ll personally be motivated to make a decision.
+
+#### 17\. What are your top priorities at the moment? How do they fit within your team's goals?
+
+Sometimes prospects can forget to include the team’s perspectives in purchasing decisions, especially if that team will be using the product. You’ll want to know if your product will further or hinder the team’s achievement of their goals.
+
+#### 18\. What are your team’s goals for the next year?
+
+This question can help you predict whether the prospect will renew their service with your business.
+
+#### 19\. What happens to your team’s goals if you don’t address this need?
+
+This question will help both you and your prospect understand the urgency of the decision to make a purchase.
+
+### Timing
+
+#### 20\. Are there any upcoming events/deadlines that you’d like to have a solution in place by?
+
+Oftentimes, urgency doesn’t have to come from you as a salesperson, it can be an internal deadline that you and the prospect will need to work within.
+
+#### 22\. Are you planning any \[insert relevant project here, i.e. lead generation campaign, major hiring spree, program overhauls, etc.)?
+
+If so, there’s a good chance that the prospect wants to make a decision by a certain date and will follow through.
+
+#### 23\. What’s your \[lead generation, revenue, retention, etc.\] goal for \[next quarter, half of the year\]? Will you be able to meet that goal without some sort of change?
+
+You can use this information to position your product as a solution that can help the prospect meet those goals.
+
+#### 24\. Working backward from the date you gave me, we’d need to finalize our agreement by \[earlier date\]. Is that sound doable?
+
+This firm question asks the prospect if they’re able to make a decision based on the information they’ve already provided. You’ll be able to use this date to plan your pipeline.
+
+Qualify Your Leads With BANT
+----------------------------
+
+BANT has lasted through the ages because it’s effective, memorable, and applicable to a range of products, price points, and sales processes. This framework is best used in conjunction with thoughtful questions that flow naturally in a two-way conversation.
+
+If you’ve never used BANT before, or if you think it’s outdated for today’s sales process, try it out on your next discovery call to see just how much information you uncover.
+
+Want to up your sales game even more? Evolve your BANT strategy to include even more questions you can ask to qualify more leads and close better deals.
+
+
+
