@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "env":"export $(cat .env | xargs)"
+    "env": "export $(cat .env | xargs)",
+    "build": "ncc build index.js -o dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Roman Kozak",
   "license": "ISC",
   "dependencies": {
     "openai": "^4.19.0"
+  },
+  "devDependencies": {
+    "ncc": "^0.3.6"
   }
 }
