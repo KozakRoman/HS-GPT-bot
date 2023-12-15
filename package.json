@@ -14,6 +14,6 @@
     "openai": "^4.19.0"
   },
   "devDependencies": {
-    "ncc": "^0.3.6"
+    "@vercel/ncc": "^0.38.1"
   }
 }
