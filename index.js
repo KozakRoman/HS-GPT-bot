@@ -5,6 +5,14 @@ const OpenAI = require("openai");
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const ASSISTANT_ID = process.env.ASSISTANT_ID;
 
+if (!OPENAI_API_KEY) {
+  console.error("OPENAI_API_KEY is not set");
+}
+
+if (!ASSISTANT_ID) {
+  console.error("ASSISTANT_ID is not set");
+}
+
 // This line is creating a new instance of the OpenAI client. It allows us to call the OpenAI APIs.
 const openai = new OpenAI({
   apiKey: OPENAI_API_KEY
@@ -38,16 +46,20 @@ async function main(event = {}, callback) {
 
   // This loop is checking the status of the answer generation by sending a request to the OpenAI API. It will keep checking until the status is completed.
   do {
-    run = await openai.beta.threads.runs.retrieve(threadId, run.id);
-  } while (
-    !["cancelled", "failed", "completed", "expired"].includes(run.status)
-  );
+    await new Promise(resolve => setTimeout(resolve, 500)); // Wait for 0.5 second
+    run = await openai.beta.threads.runs.retrieve(run.thread_id, run.id);
+  } while (["queued", "in_progress", "cancelling"].includes(run.status));
+
+  if (run.status !== "completed") {
+    console.error("Failed to generate response");
+    console.log({ status: run.status });
+  }
 
   // This line is getting the answer from the OpenAI API.
-  const messages = await openai.beta.threads.messages.list(threadId);
+  const messages = await openai.beta.threads.messages.list(run.thread_id);
 
   // This line is extracting the answer from the response.
-  const content = messages.data[0].content;
+  const content = messages?.data[0].content;
 
   // This line is preparing the response to HubSpot. It contains the answer from the assistant, and the threadId to keep track of the conversation.
   const responseJson = {
