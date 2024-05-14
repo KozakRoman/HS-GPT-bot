@@ -19,3 +19,7 @@ Open ```index.js```.
 Change the code as you see it fits.
 
 Run ```npm run build``` to get the modified file for copying to a HubSpot chat function.
+
+## UPDATE
+
+05/14/2024 code has been updated to support GPT-4o. Just replace your js code with the code from ```./dist/index.js```

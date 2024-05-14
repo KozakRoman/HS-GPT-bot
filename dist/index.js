@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 1763:
+/***/ 1659:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -13,7 +13,7 @@
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 
-var eventTargetShim = __nccwpck_require__(9517);
+var eventTargetShim = __nccwpck_require__(4697);
 
 /**
  * The signal class.
@@ -136,27 +136,27 @@ module.exports.AbortSignal = AbortSignal
 
 /***/ }),
 
-/***/ 4815:
+/***/ 4623:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-module.exports = __nccwpck_require__(2225);
-module.exports.HttpsAgent = __nccwpck_require__(200);
-module.exports.constants = __nccwpck_require__(8111);
+module.exports = __nccwpck_require__(5006);
+module.exports.HttpsAgent = __nccwpck_require__(5500);
+module.exports.constants = __nccwpck_require__(7757);
 
 
 /***/ }),
 
-/***/ 2225:
+/***/ 5006:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 const OriginalAgent = (__nccwpck_require__(3685).Agent);
-const ms = __nccwpck_require__(8832);
+const ms = __nccwpck_require__(845);
 const debug = (__nccwpck_require__(3837).debuglog)('agentkeepalive');
 const {
   INIT_SOCKET,
@@ -166,7 +166,7 @@ const {
   SOCKET_NAME,
   SOCKET_REQUEST_COUNT,
   SOCKET_REQUEST_FINISHED_COUNT,
-} = __nccwpck_require__(8111);
+} = __nccwpck_require__(7757);
 
 // OriginalAgent come from
 // - https://github.com/nodejs/node/blob/v8.12.0/lib/_http_agent.js
@@ -559,7 +559,7 @@ function inspect(obj) {
 
 /***/ }),
 
-/***/ 8111:
+/***/ 7757:
 /***/ ((module) => {
 
 "use strict";
@@ -581,18 +581,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 200:
+/***/ 5500:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
 const OriginalHttpsAgent = (__nccwpck_require__(5687).Agent);
-const HttpAgent = __nccwpck_require__(2225);
+const HttpAgent = __nccwpck_require__(5006);
 const {
   INIT_SOCKET,
   CREATE_HTTPS_CONNECTION,
-} = __nccwpck_require__(8111);
+} = __nccwpck_require__(7757);
 
 class HttpsAgent extends HttpAgent {
   constructor(options) {
@@ -640,7 +640,7 @@ module.exports = HttpsAgent;
 
 /***/ }),
 
-/***/ 9517:
+/***/ 4697:
 /***/ ((module, exports) => {
 
 "use strict";
@@ -1519,7 +1519,7 @@ module.exports.defineEventAttribute = defineEventAttribute
 
 /***/ }),
 
-/***/ 963:
+/***/ 6993:
 /***/ (function(__unused_webpack_module, exports) {
 
 /**
@@ -1534,7 +1534,7 @@ module.exports.defineEventAttribute = defineEventAttribute
 
 /***/ }),
 
-/***/ 8832:
+/***/ 845:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
@@ -1551,7 +1551,7 @@ module.exports.defineEventAttribute = defineEventAttribute
  */
 
 var util = __nccwpck_require__(3837);
-var ms = __nccwpck_require__(9580);
+var ms = __nccwpck_require__(900);
 
 module.exports = function (t) {
   if (typeof t === 'number') return t;
@@ -1566,7 +1566,7 @@ module.exports = function (t) {
 
 /***/ }),
 
-/***/ 9580:
+/***/ 900:
 /***/ ((module) => {
 
 /**
@@ -1735,7 +1735,7 @@ function plural(ms, msAbs, n, name) {
 
 /***/ }),
 
-/***/ 1392:
+/***/ 7760:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /*! node-domexception. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
@@ -1758,7 +1758,7 @@ module.exports = globalThis.DOMException
 
 /***/ }),
 
-/***/ 8811:
+/***/ 467:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -1771,7 +1771,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var Stream = _interopDefault(__nccwpck_require__(2781));
 var http = _interopDefault(__nccwpck_require__(3685));
 var Url = _interopDefault(__nccwpck_require__(7310));
-var whatwgUrl = _interopDefault(__nccwpck_require__(3005));
+var whatwgUrl = _interopDefault(__nccwpck_require__(8665));
 var https = _interopDefault(__nccwpck_require__(5687));
 var zlib = _interopDefault(__nccwpck_require__(9796));
 
@@ -1924,7 +1924,7 @@ FetchError.prototype.name = 'FetchError';
 
 let convert;
 try {
-	convert = (__nccwpck_require__(9969).convert);
+	convert = (__nccwpck_require__(2877).convert);
 } catch (e) {}
 
 const INTERNALS = Symbol('Body internals');
@@ -3553,7 +3553,7 @@ exports.AbortError = AbortError;
 
 /***/ }),
 
-/***/ 803:
+/***/ 4256:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
@@ -3754,7 +3754,7 @@ module.exports.PROCESSING_OPTIONS = PROCESSING_OPTIONS;
 
 /***/ }),
 
-/***/ 5456:
+/***/ 1452:
 /***/ (function(__unused_webpack_module, exports) {
 
 /**
@@ -7973,7 +7973,7 @@ module.exports.PROCESSING_OPTIONS = PROCESSING_OPTIONS;
 
 /***/ }),
 
-/***/ 2485:
+/***/ 4886:
 /***/ ((module) => {
 
 "use strict";
@@ -8170,12 +8170,12 @@ conversions["RegExp"] = function (V, opts) {
 
 /***/ }),
 
-/***/ 8222:
+/***/ 7537:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-const usm = __nccwpck_require__(6408);
+const usm = __nccwpck_require__(2158);
 
 exports.implementation = class URLImpl {
   constructor(constructorArgs) {
@@ -8378,15 +8378,15 @@ exports.implementation = class URLImpl {
 
 /***/ }),
 
-/***/ 507:
+/***/ 3394:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-const conversions = __nccwpck_require__(2485);
-const utils = __nccwpck_require__(2994);
-const Impl = __nccwpck_require__(8222);
+const conversions = __nccwpck_require__(4886);
+const utils = __nccwpck_require__(3185);
+const Impl = __nccwpck_require__(7537);
 
 const impl = utils.implSymbol;
 
@@ -8582,32 +8582,32 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3005:
+/***/ 8665:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 
-exports.URL = __nccwpck_require__(507)["interface"];
-exports.serializeURL = __nccwpck_require__(6408).serializeURL;
-exports.serializeURLOrigin = __nccwpck_require__(6408).serializeURLOrigin;
-exports.basicURLParse = __nccwpck_require__(6408).basicURLParse;
-exports.setTheUsername = __nccwpck_require__(6408).setTheUsername;
-exports.setThePassword = __nccwpck_require__(6408).setThePassword;
-exports.serializeHost = __nccwpck_require__(6408).serializeHost;
-exports.serializeInteger = __nccwpck_require__(6408).serializeInteger;
-exports.parseURL = __nccwpck_require__(6408).parseURL;
+exports.URL = __nccwpck_require__(3394)["interface"];
+exports.serializeURL = __nccwpck_require__(2158).serializeURL;
+exports.serializeURLOrigin = __nccwpck_require__(2158).serializeURLOrigin;
+exports.basicURLParse = __nccwpck_require__(2158).basicURLParse;
+exports.setTheUsername = __nccwpck_require__(2158).setTheUsername;
+exports.setThePassword = __nccwpck_require__(2158).setThePassword;
+exports.serializeHost = __nccwpck_require__(2158).serializeHost;
+exports.serializeInteger = __nccwpck_require__(2158).serializeInteger;
+exports.parseURL = __nccwpck_require__(2158).parseURL;
 
 
 /***/ }),
 
-/***/ 6408:
+/***/ 2158:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
 const punycode = __nccwpck_require__(5477);
-const tr46 = __nccwpck_require__(803);
+const tr46 = __nccwpck_require__(4256);
 
 const specialSchemes = {
   ftp: 21,
@@ -9906,7 +9906,7 @@ module.exports.parseURL = function (input, options) {
 
 /***/ }),
 
-/***/ 2994:
+/***/ 3185:
 /***/ ((module) => {
 
 "use strict";
@@ -9934,7 +9934,7 @@ module.exports.implForWrapper = function (wrapper) {
 
 /***/ }),
 
-/***/ 9969:
+/***/ 2877:
 /***/ ((module) => {
 
 module.exports = eval("require")("encoding");
@@ -10038,7 +10038,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 9797:
+/***/ 1778:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10048,7 +10048,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 /***/ }),
 
-/***/ 6505:
+/***/ 5860:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10070,12 +10070,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 var _FormDataEncoder_instances, _FormDataEncoder_CRLF, _FormDataEncoder_CRLF_BYTES, _FormDataEncoder_CRLF_BYTES_LENGTH, _FormDataEncoder_DASHES, _FormDataEncoder_encoder, _FormDataEncoder_footer, _FormDataEncoder_form, _FormDataEncoder_options, _FormDataEncoder_getFieldHeader;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Encoder = exports.FormDataEncoder = void 0;
-const createBoundary_1 = __importDefault(__nccwpck_require__(2087));
-const isPlainObject_1 = __importDefault(__nccwpck_require__(5883));
-const normalizeValue_1 = __importDefault(__nccwpck_require__(8521));
-const escapeName_1 = __importDefault(__nccwpck_require__(4281));
-const isFileLike_1 = __nccwpck_require__(6700);
-const isFormData_1 = __nccwpck_require__(8923);
+const createBoundary_1 = __importDefault(__nccwpck_require__(7956));
+const isPlainObject_1 = __importDefault(__nccwpck_require__(5240));
+const normalizeValue_1 = __importDefault(__nccwpck_require__(1391));
+const escapeName_1 = __importDefault(__nccwpck_require__(3864));
+const isFileLike_1 = __nccwpck_require__(6860);
+const isFormData_1 = __nccwpck_require__(1633);
 const defaultOptions = {
     enableAdditionalHeaders: false
 };
@@ -10182,7 +10182,7 @@ exports.Encoder = FormDataEncoder;
 
 /***/ }),
 
-/***/ 7557:
+/***/ 6921:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10192,7 +10192,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 /***/ }),
 
-/***/ 6082:
+/***/ 8824:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10208,16 +10208,16 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__nccwpck_require__(6505), exports);
-__exportStar(__nccwpck_require__(9797), exports);
-__exportStar(__nccwpck_require__(7557), exports);
-__exportStar(__nccwpck_require__(6700), exports);
-__exportStar(__nccwpck_require__(8923), exports);
+__exportStar(__nccwpck_require__(5860), exports);
+__exportStar(__nccwpck_require__(1778), exports);
+__exportStar(__nccwpck_require__(6921), exports);
+__exportStar(__nccwpck_require__(6860), exports);
+__exportStar(__nccwpck_require__(1633), exports);
 
 
 /***/ }),
 
-/***/ 2087:
+/***/ 7956:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10237,7 +10237,7 @@ exports["default"] = createBoundary;
 
 /***/ }),
 
-/***/ 4281:
+/***/ 3864:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10252,7 +10252,7 @@ exports["default"] = escapeName;
 
 /***/ }),
 
-/***/ 6700:
+/***/ 6860:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10262,7 +10262,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isFileLike = void 0;
-const isFunction_1 = __importDefault(__nccwpck_require__(1442));
+const isFunction_1 = __importDefault(__nccwpck_require__(2498));
 const isFileLike = (value) => Boolean(value
     && typeof value === "object"
     && (0, isFunction_1.default)(value.constructor)
@@ -10276,7 +10276,7 @@ exports.isFileLike = isFileLike;
 
 /***/ }),
 
-/***/ 8923:
+/***/ 1633:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10286,7 +10286,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isFormDataLike = exports.isFormData = void 0;
-const isFunction_1 = __importDefault(__nccwpck_require__(1442));
+const isFunction_1 = __importDefault(__nccwpck_require__(2498));
 const isFormData = (value) => Boolean(value
     && (0, isFunction_1.default)(value.constructor)
     && value[Symbol.toStringTag] === "FormData"
@@ -10300,7 +10300,7 @@ exports.isFormDataLike = exports.isFormData;
 
 /***/ }),
 
-/***/ 1442:
+/***/ 2498:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10312,7 +10312,7 @@ exports["default"] = isFunction;
 
 /***/ }),
 
-/***/ 5883:
+/***/ 5240:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10335,7 +10335,7 @@ exports["default"] = isPlainObject;
 
 /***/ }),
 
-/***/ 8521:
+/***/ 1391:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10354,7 +10354,7 @@ exports["default"] = normalizeValue;
 
 /***/ }),
 
-/***/ 8337:
+/***/ 6637:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10374,9 +10374,9 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
 var _Blob_parts, _Blob_type, _Blob_size;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Blob = void 0;
-const web_streams_polyfill_1 = __nccwpck_require__(963);
-const isFunction_1 = __nccwpck_require__(8651);
-const blobHelpers_1 = __nccwpck_require__(7109);
+const web_streams_polyfill_1 = __nccwpck_require__(6993);
+const isFunction_1 = __nccwpck_require__(4245);
+const blobHelpers_1 = __nccwpck_require__(7058);
 class Blob {
     constructor(blobParts = [], options = {}) {
         _Blob_parts.set(this, []);
@@ -10484,7 +10484,7 @@ Object.defineProperties(Blob.prototype, {
 
 /***/ }),
 
-/***/ 9835:
+/***/ 3637:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10503,7 +10503,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _File_name, _File_lastModified;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.File = void 0;
-const Blob_1 = __nccwpck_require__(8337);
+const Blob_1 = __nccwpck_require__(6637);
 class File extends Blob_1.Blob {
     constructor(fileBits, name, options = {}) {
         super(fileBits, options);
@@ -10544,7 +10544,7 @@ exports.File = File;
 
 /***/ }),
 
-/***/ 1975:
+/***/ 7268:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10558,11 +10558,11 @@ var _FormData_instances, _FormData_entries, _FormData_setEntry;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.FormData = void 0;
 const util_1 = __nccwpck_require__(3837);
-const File_1 = __nccwpck_require__(9835);
-const isFile_1 = __nccwpck_require__(7696);
-const isBlob_1 = __nccwpck_require__(4183);
-const isFunction_1 = __nccwpck_require__(8651);
-const deprecateConstructorEntries_1 = __nccwpck_require__(5268);
+const File_1 = __nccwpck_require__(3637);
+const isFile_1 = __nccwpck_require__(4529);
+const isBlob_1 = __nccwpck_require__(5493);
+const isFunction_1 = __nccwpck_require__(4245);
+const deprecateConstructorEntries_1 = __nccwpck_require__(2689);
 class FormData {
     constructor(entries) {
         _FormData_instances.add(this);
@@ -10700,7 +10700,7 @@ exports.FormData = FormData;
 
 /***/ }),
 
-/***/ 7109:
+/***/ 7058:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -10708,7 +10708,7 @@ exports.FormData = FormData;
 /*! Based on fetch-blob. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> & David Frank */
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.sliceBlob = exports.consumeBlobParts = void 0;
-const isFunction_1 = __nccwpck_require__(8651);
+const isFunction_1 = __nccwpck_require__(4245);
 const CHUNK_SIZE = 65536;
 async function* clonePart(part) {
     const end = part.byteOffset + part.byteLength;
@@ -10788,7 +10788,7 @@ exports.sliceBlob = sliceBlob;
 
 /***/ }),
 
-/***/ 5268:
+/***/ 2689:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -10802,7 +10802,7 @@ exports.deprecateConstructorEntries = (0, util_1.deprecate)(() => { }, "Construc
 
 /***/ }),
 
-/***/ 276:
+/***/ 8735:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10836,10 +10836,10 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fileFromPath = exports.fileFromPathSync = void 0;
 const fs_1 = __nccwpck_require__(7147);
 const path_1 = __nccwpck_require__(1017);
-const node_domexception_1 = __importDefault(__nccwpck_require__(1392));
-const File_1 = __nccwpck_require__(9835);
-const isPlainObject_1 = __importDefault(__nccwpck_require__(5666));
-__exportStar(__nccwpck_require__(7696), exports);
+const node_domexception_1 = __importDefault(__nccwpck_require__(7760));
+const File_1 = __nccwpck_require__(3637);
+const isPlainObject_1 = __importDefault(__nccwpck_require__(4722));
+__exportStar(__nccwpck_require__(4529), exports);
 const MESSAGE = "The requested file could not be read, "
     + "typically due to permission problems that have occurred after a reference "
     + "to a file was acquired.";
@@ -10907,7 +10907,7 @@ exports.fileFromPath = fileFromPath;
 
 /***/ }),
 
-/***/ 8250:
+/***/ 880:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -10923,42 +10923,42 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__nccwpck_require__(1975), exports);
-__exportStar(__nccwpck_require__(8337), exports);
-__exportStar(__nccwpck_require__(9835), exports);
+__exportStar(__nccwpck_require__(7268), exports);
+__exportStar(__nccwpck_require__(6637), exports);
+__exportStar(__nccwpck_require__(3637), exports);
 
 
 /***/ }),
 
-/***/ 4183:
+/***/ 5493:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isBlob = void 0;
-const Blob_1 = __nccwpck_require__(8337);
+const Blob_1 = __nccwpck_require__(6637);
 const isBlob = (value) => value instanceof Blob_1.Blob;
 exports.isBlob = isBlob;
 
 
 /***/ }),
 
-/***/ 7696:
+/***/ 4529:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isFile = void 0;
-const File_1 = __nccwpck_require__(9835);
+const File_1 = __nccwpck_require__(3637);
 const isFile = (value) => value instanceof File_1.File;
 exports.isFile = isFile;
 
 
 /***/ }),
 
-/***/ 8651:
+/***/ 4245:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10971,7 +10971,7 @@ exports.isFunction = isFunction;
 
 /***/ }),
 
-/***/ 5666:
+/***/ 4722:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10994,7 +10994,7 @@ exports["default"] = isPlainObject;
 
 /***/ }),
 
-/***/ 1868:
+/***/ 4595:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -11017,7 +11017,7 @@ exports.MultipartBody = MultipartBody;
 
 /***/ }),
 
-/***/ 219:
+/***/ 3506:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -11040,19 +11040,19 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 /**
  * Disclaimer: modules in _shims aren't intended to be imported by SDK users.
  */
-__exportStar(__nccwpck_require__(6348), exports);
+__exportStar(__nccwpck_require__(1749), exports);
 //# sourceMappingURL=runtime-node.js.map
 
 /***/ }),
 
-/***/ 3617:
+/***/ 6678:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 /**
  * Disclaimer: modules in _shims aren't intended to be imported by SDK users.
  */
-const shims = __nccwpck_require__(687);
-const auto = __nccwpck_require__(219);
+const shims = __nccwpck_require__(4437);
+const auto = __nccwpck_require__(3506);
 if (!shims.kind) shims.setShims(auto.getRuntime(), { auto: true });
 for (const property of Object.keys(shims)) {
   Object.defineProperty(exports, property, {
@@ -11065,7 +11065,7 @@ for (const property of Object.keys(shims)) {
 
 /***/ }),
 
-/***/ 6348:
+/***/ 1749:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -11101,20 +11101,20 @@ exports.getRuntime = void 0;
 /**
  * Disclaimer: modules in _shims aren't intended to be imported by SDK users.
  */
-const nf = __importStar(__nccwpck_require__(8811));
-const fd = __importStar(__nccwpck_require__(8250));
-const agentkeepalive_1 = __importDefault(__nccwpck_require__(4815));
-const abort_controller_1 = __nccwpck_require__(1763);
+const nf = __importStar(__nccwpck_require__(467));
+const fd = __importStar(__nccwpck_require__(880));
+const agentkeepalive_1 = __importDefault(__nccwpck_require__(4623));
+const abort_controller_1 = __nccwpck_require__(1659);
 const node_fs_1 = __nccwpck_require__(7561);
-const form_data_encoder_1 = __nccwpck_require__(6082);
+const form_data_encoder_1 = __nccwpck_require__(8824);
 const node_stream_1 = __nccwpck_require__(4492);
-const MultipartBody_1 = __nccwpck_require__(1868);
+const MultipartBody_1 = __nccwpck_require__(4595);
 // @ts-ignore (this package does not have proper export maps for this export)
-const ponyfill_es2018_js_1 = __nccwpck_require__(5456);
+const ponyfill_es2018_js_1 = __nccwpck_require__(1452);
 let fileFromPathWarned = false;
 async function fileFromPath(path, ...args) {
     // this import fails in environments that don't handle export maps correctly, like old versions of Jest
-    const { fileFromPath: _fileFromPath } = await Promise.resolve().then(() => __importStar(__nccwpck_require__(276)));
+    const { fileFromPath: _fileFromPath } = await Promise.resolve().then(() => __importStar(__nccwpck_require__(8735)));
     if (!fileFromPathWarned) {
         console.warn(`fileFromPath is deprecated; use fs.createReadStream(${JSON.stringify(path)}) instead`);
         fileFromPathWarned = true;
@@ -11162,7 +11162,7 @@ exports.getRuntime = getRuntime;
 
 /***/ }),
 
-/***/ 687:
+/***/ 4437:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -11210,7 +11210,7 @@ exports.setShims = setShims;
 
 /***/ }),
 
-/***/ 8073:
+/***/ 1798:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -11228,13 +11228,13 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 };
 var _AbstractPage_client;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.toBase64 = exports.getRequiredHeader = exports.isHeadersProtocol = exports.isRunningInBrowser = exports.debug = exports.hasOwn = exports.isEmptyObj = exports.maybeCoerceBoolean = exports.maybeCoerceFloat = exports.maybeCoerceInteger = exports.coerceBoolean = exports.coerceFloat = exports.coerceInteger = exports.readEnv = exports.ensurePresent = exports.castToError = exports.sleep = exports.safeJSON = exports.isRequestOptions = exports.createResponseHeaders = exports.PagePromise = exports.AbstractPage = exports.APIClient = exports.APIPromise = exports.createForm = exports.multipartFormRequestOptions = exports.maybeMultipartFormRequestOptions = void 0;
-const version_1 = __nccwpck_require__(4689);
-const streaming_1 = __nccwpck_require__(4056);
-const error_1 = __nccwpck_require__(7251);
-const index_1 = __nccwpck_require__(3617);
-const uploads_1 = __nccwpck_require__(2025);
-var uploads_2 = __nccwpck_require__(2025);
+exports.isObj = exports.toBase64 = exports.getRequiredHeader = exports.isHeadersProtocol = exports.isRunningInBrowser = exports.debug = exports.hasOwn = exports.isEmptyObj = exports.maybeCoerceBoolean = exports.maybeCoerceFloat = exports.maybeCoerceInteger = exports.coerceBoolean = exports.coerceFloat = exports.coerceInteger = exports.readEnv = exports.ensurePresent = exports.castToError = exports.sleep = exports.safeJSON = exports.isRequestOptions = exports.createResponseHeaders = exports.PagePromise = exports.AbstractPage = exports.APIClient = exports.APIPromise = exports.createForm = exports.multipartFormRequestOptions = exports.maybeMultipartFormRequestOptions = void 0;
+const version_1 = __nccwpck_require__(6417);
+const streaming_1 = __nccwpck_require__(884);
+const error_1 = __nccwpck_require__(8905);
+const index_1 = __nccwpck_require__(6678);
+const uploads_1 = __nccwpck_require__(6800);
+var uploads_2 = __nccwpck_require__(6800);
 Object.defineProperty(exports, "maybeMultipartFormRequestOptions", ({ enumerable: true, get: function () { return uploads_2.maybeMultipartFormRequestOptions; } }));
 Object.defineProperty(exports, "multipartFormRequestOptions", ({ enumerable: true, get: function () { return uploads_2.multipartFormRequestOptions; } }));
 Object.defineProperty(exports, "createForm", ({ enumerable: true, get: function () { return uploads_2.createForm; } }));
@@ -11244,6 +11244,9 @@ async function defaultParseResponse(props) {
         debug('response', response.status, response.url, response.headers, response.body);
         // Note: there is an invariant here that isn't represented in the type system
         // that if you set `stream: true` the response type must also be `Stream<T>`
+        if (props.options.__streamClass) {
+            return props.options.__streamClass.fromSSEResponse(response, props.controller);
+        }
         return streaming_1.Stream.fromSSEResponse(response, props.controller);
     }
     // fetch refuses to read the body when the status code is 204.
@@ -11254,7 +11257,8 @@ async function defaultParseResponse(props) {
         return response;
     }
     const contentType = response.headers.get('content-type');
-    if (contentType?.includes('application/json')) {
+    const isJSON = contentType?.includes('application/json') || contentType?.includes('application/vnd.api+json');
+    if (isJSON) {
         const json = await response.json();
         debug('response', response.status, response.url, response.headers, json);
         return json;
@@ -11427,17 +11431,7 @@ class APIClient {
                 options.idempotencyKey = this.defaultIdempotencyKey();
             headers[this.idempotencyHeader] = options.idempotencyKey;
         }
-        const reqHeaders = {
-            ...(contentLength && { 'Content-Length': contentLength }),
-            ...this.defaultHeaders(options),
-            ...headers,
-        };
-        // let builtin fetch set the Content-Type for multipart bodies
-        if ((0, uploads_1.isMultipartBody)(options.body) && index_1.kind !== 'node') {
-            delete reqHeaders['Content-Type'];
-        }
-        // Strip any headers being explicitly omitted with null
-        Object.keys(reqHeaders).forEach((key) => reqHeaders[key] === null && delete reqHeaders[key]);
+        const reqHeaders = this.buildHeaders({ options, headers, contentLength });
         const req = {
             method,
             ...(body && { body: body }),
@@ -11447,9 +11441,27 @@ class APIClient {
             // not compatible with standard web types
             signal: options.signal ?? null,
         };
-        this.validateHeaders(reqHeaders, headers);
         return { req, url, timeout };
     }
+    buildHeaders({ options, headers, contentLength, }) {
+        const reqHeaders = {};
+        if (contentLength) {
+            reqHeaders['content-length'] = contentLength;
+        }
+        const defaultHeaders = this.defaultHeaders(options);
+        applyHeadersMut(reqHeaders, defaultHeaders);
+        applyHeadersMut(reqHeaders, headers);
+        // let builtin fetch set the Content-Type for multipart bodies
+        if ((0, uploads_1.isMultipartBody)(options.body) && index_1.kind !== 'node') {
+            delete reqHeaders['content-type'];
+        }
+        this.validateHeaders(reqHeaders, headers);
+        return reqHeaders;
+    }
+    /**
+     * Used as a callback for mutating the given `FinalRequestOptions` object.
+     */
+    async prepareOptions(options) { }
     /**
      * Used as a callback for mutating the given `RequestInit` object.
      *
@@ -11474,6 +11486,7 @@ class APIClient {
         if (retriesRemaining == null) {
             retriesRemaining = options.maxRetries ?? this.maxRetries;
         }
+        await this.prepareOptions(options);
         const { req, url, timeout } = this.buildRequest(options);
         await this.prepareRequest(req, { url, options });
         debug('request', url, options, req.headers);
@@ -11497,12 +11510,15 @@ class APIClient {
         const responseHeaders = (0, exports.createResponseHeaders)(response.headers);
         if (!response.ok) {
             if (retriesRemaining && this.shouldRetry(response)) {
+                const retryMessage = `retrying, ${retriesRemaining} attempts remaining`;
+                debug(`response (error; ${retryMessage})`, response.status, url, responseHeaders);
                 return this.retryRequest(options, retriesRemaining, responseHeaders);
             }
             const errText = await response.text().catch((e) => (0, exports.castToError)(e).message);
             const errJSON = (0, exports.safeJSON)(errText);
             const errMessage = errJSON ? undefined : errText;
-            debug('response', response.status, url, responseHeaders, errMessage);
+            const retryMessage = retriesRemaining ? `(error; no more retries left)` : `(error; not retryable)`;
+            debug(`response (error; ${retryMessage})`, response.status, url, responseHeaders, errMessage);
             const err = this.makeStatusError(response.status, errJSON, errMessage, responseHeaders);
             throw err;
         }
@@ -11520,7 +11536,7 @@ class APIClient {
         if (!isEmptyObj(defaultQuery)) {
             query = { ...defaultQuery, ...query };
         }
-        if (query) {
+        if (typeof query === 'object' && query && !Array.isArray(query)) {
             url.search = this.stringifyQuery(query);
         }
         return url.toString();
@@ -11577,11 +11593,19 @@ class APIClient {
         return false;
     }
     async retryRequest(options, retriesRemaining, responseHeaders) {
-        // About the Retry-After header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After
         let timeoutMillis;
+        // Note the `retry-after-ms` header may not be standard, but is a good idea and we'd like proactive support for it.
+        const retryAfterMillisHeader = responseHeaders?.['retry-after-ms'];
+        if (retryAfterMillisHeader) {
+            const timeoutMs = parseFloat(retryAfterMillisHeader);
+            if (!Number.isNaN(timeoutMs)) {
+                timeoutMillis = timeoutMs;
+            }
+        }
+        // About the Retry-After header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After
         const retryAfterHeader = responseHeaders?.['retry-after'];
-        if (retryAfterHeader) {
-            const timeoutSeconds = parseInt(retryAfterHeader);
+        if (retryAfterHeader && !timeoutMillis) {
+            const timeoutSeconds = parseFloat(retryAfterHeader);
             if (!Number.isNaN(timeoutSeconds)) {
                 timeoutMillis = timeoutSeconds * 1000;
             }
@@ -11591,10 +11615,7 @@ class APIClient {
         }
         // If the API asks us to wait a certain amount of time (and it's a reasonable amount),
         // just do what it says, but otherwise calculate a default
-        if (!timeoutMillis ||
-            !Number.isInteger(timeoutMillis) ||
-            timeoutMillis <= 0 ||
-            timeoutMillis > 60 * 1000) {
+        if (!(timeoutMillis && 0 <= timeoutMillis && timeoutMillis < 60 * 1000)) {
             const maxRetries = options.maxRetries ?? this.maxRetries;
             timeoutMillis = this.calculateDefaultRetryTimeoutMillis(retriesRemaining, maxRetries);
         }
@@ -11636,7 +11657,7 @@ class AbstractPage {
             throw new error_1.OpenAIError('No next page expected; please check `.hasNextPage()` before calling `.getNextPage()`.');
         }
         const nextOptions = { ...this.options };
-        if ('params' in nextInfo) {
+        if ('params' in nextInfo && typeof nextOptions.query === 'object') {
             nextOptions.query = { ...nextOptions.query, ...nextInfo.params };
         }
         else if ('url' in nextInfo) {
@@ -11722,6 +11743,7 @@ const requestOptionsKeys = {
     signal: true,
     idempotencyKey: true,
     __binaryResponse: true,
+    __streamClass: true,
 };
 const isRequestOptions = (obj) => {
     return (typeof obj === 'object' &&
@@ -11738,7 +11760,7 @@ const getPlatformProperties = () => {
             'X-Stainless-OS': normalizePlatform(Deno.build.os),
             'X-Stainless-Arch': normalizeArch(Deno.build.arch),
             'X-Stainless-Runtime': 'deno',
-            'X-Stainless-Runtime-Version': Deno.version,
+            'X-Stainless-Runtime-Version': typeof Deno.version === 'string' ? Deno.version : Deno.version?.deno ?? 'unknown',
         };
     }
     if (typeof EdgeRuntime !== 'undefined') {
@@ -11899,14 +11921,16 @@ exports.ensurePresent = ensurePresent;
 /**
  * Read an environment variable.
  *
+ * Trims beginning and trailing whitespace.
+ *
  * Will return undefined if the environment variable doesn't exist or cannot be accessed.
  */
 const readEnv = (env) => {
     if (typeof process !== 'undefined') {
-        return process.env?.[env] ?? undefined;
+        return process.env?.[env]?.trim() ?? undefined;
     }
     if (typeof Deno !== 'undefined') {
-        return Deno.env?.get?.(env);
+        return Deno.env?.get?.(env)?.trim();
     }
     return undefined;
 };
@@ -11970,8 +11994,30 @@ function hasOwn(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj, key);
 }
 exports.hasOwn = hasOwn;
+/**
+ * Copies headers from "newHeaders" onto "targetHeaders",
+ * using lower-case for all properties,
+ * ignoring any keys with undefined values,
+ * and deleting any keys with null values.
+ */
+function applyHeadersMut(targetHeaders, newHeaders) {
+    for (const k in newHeaders) {
+        if (!hasOwn(newHeaders, k))
+            continue;
+        const lowerKey = k.toLowerCase();
+        if (!lowerKey)
+            continue;
+        const val = newHeaders[k];
+        if (val === null) {
+            delete targetHeaders[lowerKey];
+        }
+        else if (val !== undefined) {
+            targetHeaders[lowerKey] = val;
+        }
+    }
+}
 function debug(action, ...args) {
-    if (typeof process !== 'undefined' && process.env['DEBUG'] === 'true') {
+    if (typeof process !== 'undefined' && process?.env?.['DEBUG'] === 'true') {
         console.log(`OpenAI:DEBUG:${action}`, ...args);
     }
 }
@@ -12042,19 +12088,23 @@ const toBase64 = (str) => {
     throw new error_1.OpenAIError('Cannot generate b64 string; Expected `Buffer` or `btoa` to be defined');
 };
 exports.toBase64 = toBase64;
+function isObj(obj) {
+    return obj != null && typeof obj === 'object' && !Array.isArray(obj);
+}
+exports.isObj = isObj;
 //# sourceMappingURL=core.js.map
 
 /***/ }),
 
-/***/ 7251:
+/***/ 8905:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.InternalServerError = exports.RateLimitError = exports.UnprocessableEntityError = exports.ConflictError = exports.NotFoundError = exports.PermissionDeniedError = exports.AuthenticationError = exports.BadRequestError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIUserAbortError = exports.APIError = exports.OpenAIError = void 0;
-const core_1 = __nccwpck_require__(8073);
+const core_1 = __nccwpck_require__(1798);
 class OpenAIError extends Error {
 }
 exports.OpenAIError = OpenAIError;
@@ -12063,6 +12113,7 @@ class APIError extends OpenAIError {
         super(`${APIError.makeMessage(status, error, message)}`);
         this.status = status;
         this.headers = headers;
+        this.request_id = headers?.['x-request-id'];
         const data = error;
         this.error = data;
         this.code = data?.['code'];
@@ -12071,7 +12122,8 @@ class APIError extends OpenAIError {
     }
     static makeMessage(status, error, message) {
         const msg = error?.message ?
-            typeof error.message === 'string' ? error.message
+            typeof error.message === 'string' ?
+                error.message
                 : JSON.stringify(error.message)
             : error ? JSON.stringify(error)
                 : message;
@@ -12199,12 +12251,12 @@ exports.InternalServerError = InternalServerError;
 
 /***/ }),
 
-/***/ 4048:
+/***/ 47:
 /***/ (function(module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -12230,20 +12282,21 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 var _a;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.fileFromPath = exports.toFile = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.OpenAI = void 0;
-const Core = __importStar(__nccwpck_require__(8073));
-const Pagination = __importStar(__nccwpck_require__(4646));
-const Errors = __importStar(__nccwpck_require__(7251));
-const Uploads = __importStar(__nccwpck_require__(2025));
-const API = __importStar(__nccwpck_require__(443));
+exports.AzureOpenAI = exports.fileFromPath = exports.toFile = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.OpenAI = void 0;
+const Core = __importStar(__nccwpck_require__(1798));
+const Errors = __importStar(__nccwpck_require__(8905));
+const Uploads = __importStar(__nccwpck_require__(6800));
+const Pagination = __importStar(__nccwpck_require__(7401));
+const API = __importStar(__nccwpck_require__(5690));
 /** API Client for interfacing with the OpenAI API. */
 class OpenAI extends Core.APIClient {
     /**
      * API Client for interfacing with the OpenAI API.
      *
-     * @param {string} [opts.apiKey==process.env['OPENAI_API_KEY'] ?? undefined]
-     * @param {string | null} [opts.organization==process.env['OPENAI_ORG_ID'] ?? null]
-     * @param {string} [opts.baseURL] - Override the default base URL for the API.
+     * @param {string | undefined} [opts.apiKey=process.env['OPENAI_API_KEY'] ?? undefined]
+     * @param {string | null | undefined} [opts.organization=process.env['OPENAI_ORG_ID'] ?? null]
+     * @param {string | null | undefined} [opts.project=process.env['OPENAI_PROJECT_ID'] ?? null]
+     * @param {string} [opts.baseURL=process.env['OPENAI_BASE_URL'] ?? https://api.openai.com/v1] - Override the default base URL for the API.
      * @param {number} [opts.timeout=10 minutes] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
      * @param {number} [opts.httpAgent] - An HTTP agent used to manage HTTP(s) connections.
      * @param {Core.Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -12252,15 +12305,16 @@ class OpenAI extends Core.APIClient {
      * @param {Core.DefaultQuery} opts.defaultQuery - Default query parameters to include with every request to the API.
      * @param {boolean} [opts.dangerouslyAllowBrowser=false] - By default, client-side use of this library is not allowed, as it risks exposing your secret API credentials to attackers.
      */
-    constructor({ apiKey = Core.readEnv('OPENAI_API_KEY'), organization = Core.readEnv('OPENAI_ORG_ID') ?? null, ...opts } = {}) {
+    constructor({ baseURL = Core.readEnv('OPENAI_BASE_URL'), apiKey = Core.readEnv('OPENAI_API_KEY'), organization = Core.readEnv('OPENAI_ORG_ID') ?? null, project = Core.readEnv('OPENAI_PROJECT_ID') ?? null, ...opts } = {}) {
         if (apiKey === undefined) {
             throw new Errors.OpenAIError("The OPENAI_API_KEY environment variable is missing or empty; either provide it, or instantiate the OpenAI client with an apiKey option, like new OpenAI({ apiKey: 'My API Key' }).");
         }
         const options = {
             apiKey,
             organization,
+            project,
             ...opts,
-            baseURL: opts.baseURL ?? `https://api.openai.com/v1`,
+            baseURL: baseURL || `https://api.openai.com/v1`,
         };
         if (!options.dangerouslyAllowBrowser && Core.isRunningInBrowser()) {
             throw new Errors.OpenAIError("It looks like you're running in a browser-like environment.\n\nThis is disabled by default, as it risks exposing your secret API credentials to attackers.\nIf you understand the risks and have appropriate mitigations in place,\nyou can set the `dangerouslyAllowBrowser` option to `true`, e.g.,\n\nnew OpenAI({ apiKey, dangerouslyAllowBrowser: true });\n\nhttps://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety\n");
@@ -12274,7 +12328,6 @@ class OpenAI extends Core.APIClient {
         });
         this.completions = new API.Completions(this);
         this.chat = new API.Chat(this);
-        this.edits = new API.Edits(this);
         this.embeddings = new API.Embeddings(this);
         this.files = new API.Files(this);
         this.images = new API.Images(this);
@@ -12282,11 +12335,12 @@ class OpenAI extends Core.APIClient {
         this.moderations = new API.Moderations(this);
         this.models = new API.Models(this);
         this.fineTuning = new API.FineTuning(this);
-        this.fineTunes = new API.FineTunes(this);
         this.beta = new API.Beta(this);
+        this.batches = new API.Batches(this);
         this._options = options;
         this.apiKey = apiKey;
         this.organization = organization;
+        this.project = project;
     }
     defaultQuery() {
         return this._options.defaultQuery;
@@ -12295,6 +12349,7 @@ class OpenAI extends Core.APIClient {
         return {
             ...super.defaultHeaders(opts),
             'OpenAI-Organization': this.organization,
+            'OpenAI-Project': this.project,
             ...this._options.defaultHeaders,
         };
     }
@@ -12318,18 +12373,16 @@ OpenAI.AuthenticationError = Errors.AuthenticationError;
 OpenAI.InternalServerError = Errors.InternalServerError;
 OpenAI.PermissionDeniedError = Errors.PermissionDeniedError;
 OpenAI.UnprocessableEntityError = Errors.UnprocessableEntityError;
+OpenAI.toFile = Uploads.toFile;
+OpenAI.fileFromPath = Uploads.fileFromPath;
 exports.OpenAIError = Errors.OpenAIError, exports.APIError = Errors.APIError, exports.APIConnectionError = Errors.APIConnectionError, exports.APIConnectionTimeoutError = Errors.APIConnectionTimeoutError, exports.APIUserAbortError = Errors.APIUserAbortError, exports.NotFoundError = Errors.NotFoundError, exports.ConflictError = Errors.ConflictError, exports.RateLimitError = Errors.RateLimitError, exports.BadRequestError = Errors.BadRequestError, exports.AuthenticationError = Errors.AuthenticationError, exports.InternalServerError = Errors.InternalServerError, exports.PermissionDeniedError = Errors.PermissionDeniedError, exports.UnprocessableEntityError = Errors.UnprocessableEntityError;
 exports.toFile = Uploads.toFile;
 exports.fileFromPath = Uploads.fileFromPath;
 (function (OpenAI) {
-    // Helper functions
-    OpenAI.toFile = Uploads.toFile;
-    OpenAI.fileFromPath = Uploads.fileFromPath;
     OpenAI.Page = Pagination.Page;
     OpenAI.CursorPage = Pagination.CursorPage;
     OpenAI.Completions = API.Completions;
     OpenAI.Chat = API.Chat;
-    OpenAI.Edits = API.Edits;
     OpenAI.Embeddings = API.Embeddings;
     OpenAI.Files = API.Files;
     OpenAI.FileObjectsPage = API.FileObjectsPage;
@@ -12339,17 +12392,388 @@ exports.fileFromPath = Uploads.fileFromPath;
     OpenAI.Models = API.Models;
     OpenAI.ModelsPage = API.ModelsPage;
     OpenAI.FineTuning = API.FineTuning;
-    OpenAI.FineTunes = API.FineTunes;
-    OpenAI.FineTunesPage = API.FineTunesPage;
     OpenAI.Beta = API.Beta;
+    OpenAI.Batches = API.Batches;
+    OpenAI.BatchesPage = API.BatchesPage;
 })(OpenAI = exports.OpenAI || (exports.OpenAI = {}));
+/** API Client for interfacing with the Azure OpenAI API. */
+class AzureOpenAI extends OpenAI {
+    /**
+     * API Client for interfacing with the Azure OpenAI API.
+     *
+     * @param {string | undefined} [opts.apiVersion=process.env['OPENAI_API_VERSION'] ?? undefined]
+     * @param {string | undefined} [opts.endpoint=process.env['AZURE_OPENAI_ENDPOINT'] ?? undefined] - Your Azure endpoint, including the resource, e.g. `https://example-resource.azure.openai.com/`
+     * @param {string | undefined} [opts.apiKey=process.env['AZURE_OPENAI_API_KEY'] ?? undefined]
+     * @param {string | undefined} opts.deployment - A model deployment, if given, sets the base client URL to include `/deployments/{deployment}`.
+     * @param {string | null | undefined} [opts.organization=process.env['OPENAI_ORG_ID'] ?? null]
+     * @param {string} [opts.baseURL=process.env['OPENAI_BASE_URL']] - Sets the base URL for the API.
+     * @param {number} [opts.timeout=10 minutes] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
+     * @param {number} [opts.httpAgent] - An HTTP agent used to manage HTTP(s) connections.
+     * @param {Core.Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
+     * @param {number} [opts.maxRetries=2] - The maximum number of times the client will retry a request.
+     * @param {Core.Headers} opts.defaultHeaders - Default headers to include with every request to the API.
+     * @param {Core.DefaultQuery} opts.defaultQuery - Default query parameters to include with every request to the API.
+     * @param {boolean} [opts.dangerouslyAllowBrowser=false] - By default, client-side use of this library is not allowed, as it risks exposing your secret API credentials to attackers.
+     */
+    constructor({ baseURL = Core.readEnv('OPENAI_BASE_URL'), apiKey = Core.readEnv('AZURE_OPENAI_API_KEY'), apiVersion = Core.readEnv('OPENAI_API_VERSION'), endpoint, deployment, azureADTokenProvider, dangerouslyAllowBrowser, ...opts } = {}) {
+        if (!apiVersion) {
+            throw new Errors.OpenAIError("The OPENAI_API_VERSION environment variable is missing or empty; either provide it, or instantiate the AzureOpenAI client with an apiVersion option, like new AzureOpenAI({ apiVersion: 'My API Version' }).");
+        }
+        if (typeof azureADTokenProvider === 'function') {
+            dangerouslyAllowBrowser = true;
+        }
+        if (!azureADTokenProvider && !apiKey) {
+            throw new Errors.OpenAIError('Missing credentials. Please pass one of `apiKey` and `azureADTokenProvider`, or set the `AZURE_OPENAI_API_KEY` environment variable.');
+        }
+        if (azureADTokenProvider && apiKey) {
+            throw new Errors.OpenAIError('The `apiKey` and `azureADTokenProvider` arguments are mutually exclusive; only one can be passed at a time.');
+        }
+        // define a sentinel value to avoid any typing issues
+        apiKey ?? (apiKey = API_KEY_SENTINEL);
+        opts.defaultQuery = { ...opts.defaultQuery, 'api-version': apiVersion };
+        if (!baseURL) {
+            if (!endpoint) {
+                endpoint = process.env['AZURE_OPENAI_ENDPOINT'];
+            }
+            if (!endpoint) {
+                throw new Errors.OpenAIError('Must provide one of the `baseURL` or `endpoint` arguments, or the `AZURE_OPENAI_ENDPOINT` environment variable');
+            }
+            baseURL = `${endpoint}/openai`;
+        }
+        else {
+            if (endpoint) {
+                throw new Errors.OpenAIError('baseURL and endpoint are mutually exclusive');
+            }
+        }
+        super({
+            apiKey,
+            baseURL,
+            ...opts,
+            ...(dangerouslyAllowBrowser !== undefined ? { dangerouslyAllowBrowser } : {}),
+        });
+        this.apiVersion = '';
+        this._azureADTokenProvider = azureADTokenProvider;
+        this.apiVersion = apiVersion;
+        this._deployment = deployment;
+    }
+    buildRequest(options) {
+        if (_deployments_endpoints.has(options.path) && options.method === 'post' && options.body !== undefined) {
+            if (!Core.isObj(options.body)) {
+                throw new Error('Expected request body to be an object');
+            }
+            const model = this._deployment || options.body['model'];
+            delete options.body['model'];
+            if (model !== undefined && !this.baseURL.includes('/deployments')) {
+                options.path = `/deployments/${model}${options.path}`;
+            }
+        }
+        return super.buildRequest(options);
+    }
+    async _getAzureADToken() {
+        if (typeof this._azureADTokenProvider === 'function') {
+            const token = await this._azureADTokenProvider();
+            if (!token || typeof token !== 'string') {
+                throw new Errors.OpenAIError(`Expected 'azureADTokenProvider' argument to return a string but it returned ${token}`);
+            }
+            return token;
+        }
+        return undefined;
+    }
+    authHeaders(opts) {
+        return {};
+    }
+    async prepareOptions(opts) {
+        if (opts.headers?.['Authorization'] || opts.headers?.['api-key']) {
+            return super.prepareOptions(opts);
+        }
+        const token = await this._getAzureADToken();
+        opts.headers ?? (opts.headers = {});
+        if (token) {
+            opts.headers['Authorization'] = `Bearer ${token}`;
+        }
+        else if (this.apiKey !== API_KEY_SENTINEL) {
+            opts.headers['api-key'] = this.apiKey;
+        }
+        else {
+            throw new Errors.OpenAIError('Unable to handle auth');
+        }
+        return super.prepareOptions(opts);
+    }
+}
+exports.AzureOpenAI = AzureOpenAI;
+const _deployments_endpoints = new Set([
+    '/completions',
+    '/chat/completions',
+    '/embeddings',
+    '/audio/transcriptions',
+    '/audio/translations',
+    '/audio/speech',
+    '/images/generations',
+    '/batches',
+]);
+const API_KEY_SENTINEL = '<Missing Key>';
+// ---------------------- End Azure ----------------------
 exports = module.exports = OpenAI;
+module.exports.AzureOpenAI = AzureOpenAI;
 exports["default"] = OpenAI;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 4982:
+/***/ 9365:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+};
+var _AbstractAssistantStreamRunner_connectedPromise, _AbstractAssistantStreamRunner_resolveConnectedPromise, _AbstractAssistantStreamRunner_rejectConnectedPromise, _AbstractAssistantStreamRunner_endPromise, _AbstractAssistantStreamRunner_resolveEndPromise, _AbstractAssistantStreamRunner_rejectEndPromise, _AbstractAssistantStreamRunner_listeners, _AbstractAssistantStreamRunner_ended, _AbstractAssistantStreamRunner_errored, _AbstractAssistantStreamRunner_aborted, _AbstractAssistantStreamRunner_catchingPromiseCreated, _AbstractAssistantStreamRunner_handleError;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AbstractAssistantStreamRunner = void 0;
+const error_1 = __nccwpck_require__(8905);
+class AbstractAssistantStreamRunner {
+    constructor() {
+        this.controller = new AbortController();
+        _AbstractAssistantStreamRunner_connectedPromise.set(this, void 0);
+        _AbstractAssistantStreamRunner_resolveConnectedPromise.set(this, () => { });
+        _AbstractAssistantStreamRunner_rejectConnectedPromise.set(this, () => { });
+        _AbstractAssistantStreamRunner_endPromise.set(this, void 0);
+        _AbstractAssistantStreamRunner_resolveEndPromise.set(this, () => { });
+        _AbstractAssistantStreamRunner_rejectEndPromise.set(this, () => { });
+        _AbstractAssistantStreamRunner_listeners.set(this, {});
+        _AbstractAssistantStreamRunner_ended.set(this, false);
+        _AbstractAssistantStreamRunner_errored.set(this, false);
+        _AbstractAssistantStreamRunner_aborted.set(this, false);
+        _AbstractAssistantStreamRunner_catchingPromiseCreated.set(this, false);
+        _AbstractAssistantStreamRunner_handleError.set(this, (error) => {
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_errored, true, "f");
+            if (error instanceof Error && error.name === 'AbortError') {
+                error = new error_1.APIUserAbortError();
+            }
+            if (error instanceof error_1.APIUserAbortError) {
+                __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_aborted, true, "f");
+                return this._emit('abort', error);
+            }
+            if (error instanceof error_1.OpenAIError) {
+                return this._emit('error', error);
+            }
+            if (error instanceof Error) {
+                const openAIError = new error_1.OpenAIError(error.message);
+                // @ts-ignore
+                openAIError.cause = error;
+                return this._emit('error', openAIError);
+            }
+            return this._emit('error', new error_1.OpenAIError(String(error)));
+        });
+        __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_connectedPromise, new Promise((resolve, reject) => {
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_resolveConnectedPromise, resolve, "f");
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_rejectConnectedPromise, reject, "f");
+        }), "f");
+        __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_endPromise, new Promise((resolve, reject) => {
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_resolveEndPromise, resolve, "f");
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_rejectEndPromise, reject, "f");
+        }), "f");
+        // Don't let these promises cause unhandled rejection errors.
+        // we will manually cause an unhandled rejection error later
+        // if the user hasn't registered any error listener or called
+        // any promise-returning method.
+        __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_connectedPromise, "f").catch(() => { });
+        __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_endPromise, "f").catch(() => { });
+    }
+    _run(executor) {
+        // Unfortunately if we call `executor()` immediately we get runtime errors about
+        // references to `this` before the `super()` constructor call returns.
+        setTimeout(() => {
+            executor().then(() => {
+                // this._emitFinal();
+                this._emit('end');
+            }, __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_handleError, "f"));
+        }, 0);
+    }
+    _addRun(run) {
+        return run;
+    }
+    _connected() {
+        if (this.ended)
+            return;
+        __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_resolveConnectedPromise, "f").call(this);
+        this._emit('connect');
+    }
+    get ended() {
+        return __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_ended, "f");
+    }
+    get errored() {
+        return __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_errored, "f");
+    }
+    get aborted() {
+        return __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_aborted, "f");
+    }
+    abort() {
+        this.controller.abort();
+    }
+    /**
+     * Adds the listener function to the end of the listeners array for the event.
+     * No checks are made to see if the listener has already been added. Multiple calls passing
+     * the same combination of event and listener will result in the listener being added, and
+     * called, multiple times.
+     * @returns this ChatCompletionStream, so that calls can be chained
+     */
+    on(event, listener) {
+        const listeners = __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event] || (__classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event] = []);
+        listeners.push({ listener });
+        return this;
+    }
+    /**
+     * Removes the specified listener from the listener array for the event.
+     * off() will remove, at most, one instance of a listener from the listener array. If any single
+     * listener has been added multiple times to the listener array for the specified event, then
+     * off() must be called multiple times to remove each instance.
+     * @returns this ChatCompletionStream, so that calls can be chained
+     */
+    off(event, listener) {
+        const listeners = __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event];
+        if (!listeners)
+            return this;
+        const index = listeners.findIndex((l) => l.listener === listener);
+        if (index >= 0)
+            listeners.splice(index, 1);
+        return this;
+    }
+    /**
+     * Adds a one-time listener function for the event. The next time the event is triggered,
+     * this listener is removed and then invoked.
+     * @returns this ChatCompletionStream, so that calls can be chained
+     */
+    once(event, listener) {
+        const listeners = __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event] || (__classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event] = []);
+        listeners.push({ listener, once: true });
+        return this;
+    }
+    /**
+     * This is similar to `.once()`, but returns a Promise that resolves the next time
+     * the event is triggered, instead of calling a listener callback.
+     * @returns a Promise that resolves the next time given event is triggered,
+     * or rejects if an error is emitted.  (If you request the 'error' event,
+     * returns a promise that resolves with the error).
+     *
+     * Example:
+     *
+     *   const message = await stream.emitted('message') // rejects if the stream errors
+     */
+    emitted(event) {
+        return new Promise((resolve, reject) => {
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_catchingPromiseCreated, true, "f");
+            if (event !== 'error')
+                this.once('error', reject);
+            this.once(event, resolve);
+        });
+    }
+    async done() {
+        __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_catchingPromiseCreated, true, "f");
+        await __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_endPromise, "f");
+    }
+    _emit(event, ...args) {
+        // make sure we don't emit any events after end
+        if (__classPrivateFieldGet(this, _AbstractAssistantStreamRunner_ended, "f")) {
+            return;
+        }
+        if (event === 'end') {
+            __classPrivateFieldSet(this, _AbstractAssistantStreamRunner_ended, true, "f");
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_resolveEndPromise, "f").call(this);
+        }
+        const listeners = __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event];
+        if (listeners) {
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_listeners, "f")[event] = listeners.filter((l) => !l.once);
+            listeners.forEach(({ listener }) => listener(...args));
+        }
+        if (event === 'abort') {
+            const error = args[0];
+            if (!__classPrivateFieldGet(this, _AbstractAssistantStreamRunner_catchingPromiseCreated, "f") && !listeners?.length) {
+                Promise.reject(error);
+            }
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_rejectConnectedPromise, "f").call(this, error);
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_rejectEndPromise, "f").call(this, error);
+            this._emit('end');
+            return;
+        }
+        if (event === 'error') {
+            // NOTE: _emit('error', error) should only be called from #handleError().
+            const error = args[0];
+            if (!__classPrivateFieldGet(this, _AbstractAssistantStreamRunner_catchingPromiseCreated, "f") && !listeners?.length) {
+                // Trigger an unhandled rejection if the user hasn't registered any error handlers.
+                // If you are seeing stack traces here, make sure to handle errors via either:
+                // - runner.on('error', () => ...)
+                // - await runner.done()
+                // - await runner.finalChatCompletion()
+                // - etc.
+                Promise.reject(error);
+            }
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_rejectConnectedPromise, "f").call(this, error);
+            __classPrivateFieldGet(this, _AbstractAssistantStreamRunner_rejectEndPromise, "f").call(this, error);
+            this._emit('end');
+        }
+    }
+    async _threadAssistantStream(body, thread, options) {
+        return await this._createThreadAssistantStream(thread, body, options);
+    }
+    async _runAssistantStream(threadId, runs, params, options) {
+        return await this._createAssistantStream(runs, threadId, params, options);
+    }
+    async _runToolAssistantStream(threadId, runId, runs, params, options) {
+        return await this._createToolAssistantStream(runs, threadId, runId, params, options);
+    }
+    async _createThreadAssistantStream(thread, body, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        // this.#validateParams(params);
+        const runResult = await thread.createAndRun({ ...body, stream: false }, { ...options, signal: this.controller.signal });
+        this._connected();
+        return this._addRun(runResult);
+    }
+    async _createToolAssistantStream(run, threadId, runId, params, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        const runResult = await run.submitToolOutputs(threadId, runId, { ...params, stream: false }, { ...options, signal: this.controller.signal });
+        this._connected();
+        return this._addRun(runResult);
+    }
+    async _createAssistantStream(run, threadId, params, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        // this.#validateParams(params);
+        const runResult = await run.create(threadId, { ...params, stream: false }, { ...options, signal: this.controller.signal });
+        this._connected();
+        return this._addRun(runResult);
+    }
+}
+exports.AbstractAssistantStreamRunner = AbstractAssistantStreamRunner;
+_AbstractAssistantStreamRunner_connectedPromise = new WeakMap(), _AbstractAssistantStreamRunner_resolveConnectedPromise = new WeakMap(), _AbstractAssistantStreamRunner_rejectConnectedPromise = new WeakMap(), _AbstractAssistantStreamRunner_endPromise = new WeakMap(), _AbstractAssistantStreamRunner_resolveEndPromise = new WeakMap(), _AbstractAssistantStreamRunner_rejectEndPromise = new WeakMap(), _AbstractAssistantStreamRunner_listeners = new WeakMap(), _AbstractAssistantStreamRunner_ended = new WeakMap(), _AbstractAssistantStreamRunner_errored = new WeakMap(), _AbstractAssistantStreamRunner_aborted = new WeakMap(), _AbstractAssistantStreamRunner_catchingPromiseCreated = new WeakMap(), _AbstractAssistantStreamRunner_handleError = new WeakMap();
+//# sourceMappingURL=AbstractAssistantStreamRunner.js.map
+
+/***/ }),
+
+/***/ 8398:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -12368,9 +12792,9 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _AbstractChatCompletionRunner_instances, _AbstractChatCompletionRunner_connectedPromise, _AbstractChatCompletionRunner_resolveConnectedPromise, _AbstractChatCompletionRunner_rejectConnectedPromise, _AbstractChatCompletionRunner_endPromise, _AbstractChatCompletionRunner_resolveEndPromise, _AbstractChatCompletionRunner_rejectEndPromise, _AbstractChatCompletionRunner_listeners, _AbstractChatCompletionRunner_ended, _AbstractChatCompletionRunner_errored, _AbstractChatCompletionRunner_aborted, _AbstractChatCompletionRunner_catchingPromiseCreated, _AbstractChatCompletionRunner_getFinalContent, _AbstractChatCompletionRunner_getFinalMessage, _AbstractChatCompletionRunner_getFinalFunctionCall, _AbstractChatCompletionRunner_getFinalFunctionCallResult, _AbstractChatCompletionRunner_calculateTotalUsage, _AbstractChatCompletionRunner_handleError, _AbstractChatCompletionRunner_validateParams, _AbstractChatCompletionRunner_stringifyFunctionCallResult;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AbstractChatCompletionRunner = void 0;
-const error_1 = __nccwpck_require__(7251);
-const RunnableFunction_1 = __nccwpck_require__(1671);
-const chatCompletionUtils_1 = __nccwpck_require__(4175);
+const error_1 = __nccwpck_require__(8905);
+const RunnableFunction_1 = __nccwpck_require__(5464);
+const chatCompletionUtils_1 = __nccwpck_require__(7858);
 const DEFAULT_MAX_CHAT_COMPLETIONS = 10;
 class AbstractChatCompletionRunner {
     constructor() {
@@ -12443,6 +12867,8 @@ class AbstractChatCompletionRunner {
         return chatCompletion;
     }
     _addMessage(message, emit = true) {
+        if (!('content' in message))
+            message.content = null;
         this.messages.push(message);
         if (emit) {
             this._emit('message', message);
@@ -12589,8 +13015,9 @@ class AbstractChatCompletionRunner {
     }
     _emit(event, ...args) {
         // make sure we don't emit any events after end
-        if (__classPrivateFieldGet(this, _AbstractChatCompletionRunner_ended, "f"))
+        if (__classPrivateFieldGet(this, _AbstractChatCompletionRunner_ended, "f")) {
             return;
+        }
         if (event === 'end') {
             __classPrivateFieldSet(this, _AbstractChatCompletionRunner_ended, true, "f");
             __classPrivateFieldGet(this, _AbstractChatCompletionRunner_resolveEndPromise, "f").call(this);
@@ -12631,7 +13058,7 @@ class AbstractChatCompletionRunner {
         const completion = this._chatCompletions[this._chatCompletions.length - 1];
         if (completion)
             this._emit('finalChatCompletion', completion);
-        const finalMessage = this.messages[this.messages.length - 1];
+        const finalMessage = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this);
         if (finalMessage)
             this._emit('finalMessage', finalMessage);
         const finalContent = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalContent).call(this);
@@ -12766,8 +13193,9 @@ class AbstractChatCompletionRunner {
             if (!message) {
                 throw new error_1.OpenAIError(`missing message in ChatCompletion response`);
             }
-            if (!message.tool_calls)
+            if (!message.tool_calls) {
                 return;
+            }
             for (const tool_call of message.tool_calls) {
                 if (tool_call.type !== 'function')
                     continue;
@@ -12799,21 +13227,23 @@ class AbstractChatCompletionRunner {
                 const rawContent = await fn.function(parsed, this);
                 const content = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_stringifyFunctionCallResult).call(this, rawContent);
                 this._addMessage({ role, tool_call_id, content });
-                if (singleFunctionToCall)
+                if (singleFunctionToCall) {
                     return;
+                }
             }
         }
+        return;
     }
 }
 exports.AbstractChatCompletionRunner = AbstractChatCompletionRunner;
 _AbstractChatCompletionRunner_connectedPromise = new WeakMap(), _AbstractChatCompletionRunner_resolveConnectedPromise = new WeakMap(), _AbstractChatCompletionRunner_rejectConnectedPromise = new WeakMap(), _AbstractChatCompletionRunner_endPromise = new WeakMap(), _AbstractChatCompletionRunner_resolveEndPromise = new WeakMap(), _AbstractChatCompletionRunner_rejectEndPromise = new WeakMap(), _AbstractChatCompletionRunner_listeners = new WeakMap(), _AbstractChatCompletionRunner_ended = new WeakMap(), _AbstractChatCompletionRunner_errored = new WeakMap(), _AbstractChatCompletionRunner_aborted = new WeakMap(), _AbstractChatCompletionRunner_catchingPromiseCreated = new WeakMap(), _AbstractChatCompletionRunner_handleError = new WeakMap(), _AbstractChatCompletionRunner_instances = new WeakSet(), _AbstractChatCompletionRunner_getFinalContent = function _AbstractChatCompletionRunner_getFinalContent() {
-    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this).content;
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this).content ?? null;
 }, _AbstractChatCompletionRunner_getFinalMessage = function _AbstractChatCompletionRunner_getFinalMessage() {
     let i = this.messages.length;
     while (i-- > 0) {
         const message = this.messages[i];
         if ((0, chatCompletionUtils_1.isAssistantMessage)(message)) {
-            return message;
+            return { ...message, content: message.content ?? null };
         }
     }
     throw new error_1.OpenAIError('stream ended without producing a ChatCompletionMessage with role=assistant');
@@ -12823,12 +13253,21 @@ _AbstractChatCompletionRunner_connectedPromise = new WeakMap(), _AbstractChatCom
         if ((0, chatCompletionUtils_1.isAssistantMessage)(message) && message?.function_call) {
             return message.function_call;
         }
+        if ((0, chatCompletionUtils_1.isAssistantMessage)(message) && message?.tool_calls?.length) {
+            return message.tool_calls.at(-1)?.function;
+        }
     }
     return;
 }, _AbstractChatCompletionRunner_getFinalFunctionCallResult = function _AbstractChatCompletionRunner_getFinalFunctionCallResult() {
     for (let i = this.messages.length - 1; i >= 0; i--) {
         const message = this.messages[i];
         if ((0, chatCompletionUtils_1.isFunctionMessage)(message) && message.content != null) {
+            return message.content;
+        }
+        if ((0, chatCompletionUtils_1.isToolMessage)(message) &&
+            message.content != null &&
+            this.messages.some((x) => x.role === 'assistant' &&
+                x.tool_calls?.some((y) => y.type === 'function' && y.id === message.tool_call_id))) {
             return message.content;
         }
     }
@@ -12860,24 +13299,588 @@ _AbstractChatCompletionRunner_connectedPromise = new WeakMap(), _AbstractChatCom
 
 /***/ }),
 
-/***/ 3511:
+/***/ 7514:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+};
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+};
+var _AssistantStream_instances, _AssistantStream_events, _AssistantStream_runStepSnapshots, _AssistantStream_messageSnapshots, _AssistantStream_messageSnapshot, _AssistantStream_finalRun, _AssistantStream_currentContentIndex, _AssistantStream_currentContent, _AssistantStream_currentToolCallIndex, _AssistantStream_currentToolCall, _AssistantStream_currentEvent, _AssistantStream_currentRunSnapshot, _AssistantStream_currentRunStepSnapshot, _AssistantStream_addEvent, _AssistantStream_endRequest, _AssistantStream_handleMessage, _AssistantStream_handleRunStep, _AssistantStream_handleEvent, _AssistantStream_accumulateRunStep, _AssistantStream_accumulateMessage, _AssistantStream_accumulateContent, _AssistantStream_handleRun;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AssistantStream = void 0;
+const Core = __importStar(__nccwpck_require__(1798));
+const AbstractAssistantStreamRunner_1 = __nccwpck_require__(9365);
+const streaming_1 = __nccwpck_require__(884);
+const error_1 = __nccwpck_require__(8905);
+class AssistantStream extends AbstractAssistantStreamRunner_1.AbstractAssistantStreamRunner {
+    constructor() {
+        super(...arguments);
+        _AssistantStream_instances.add(this);
+        //Track all events in a single list for reference
+        _AssistantStream_events.set(this, []);
+        //Used to accumulate deltas
+        //We are accumulating many types so the value here is not strict
+        _AssistantStream_runStepSnapshots.set(this, {});
+        _AssistantStream_messageSnapshots.set(this, {});
+        _AssistantStream_messageSnapshot.set(this, void 0);
+        _AssistantStream_finalRun.set(this, void 0);
+        _AssistantStream_currentContentIndex.set(this, void 0);
+        _AssistantStream_currentContent.set(this, void 0);
+        _AssistantStream_currentToolCallIndex.set(this, void 0);
+        _AssistantStream_currentToolCall.set(this, void 0);
+        //For current snapshot methods
+        _AssistantStream_currentEvent.set(this, void 0);
+        _AssistantStream_currentRunSnapshot.set(this, void 0);
+        _AssistantStream_currentRunStepSnapshot.set(this, void 0);
+    }
+    [(_AssistantStream_events = new WeakMap(), _AssistantStream_runStepSnapshots = new WeakMap(), _AssistantStream_messageSnapshots = new WeakMap(), _AssistantStream_messageSnapshot = new WeakMap(), _AssistantStream_finalRun = new WeakMap(), _AssistantStream_currentContentIndex = new WeakMap(), _AssistantStream_currentContent = new WeakMap(), _AssistantStream_currentToolCallIndex = new WeakMap(), _AssistantStream_currentToolCall = new WeakMap(), _AssistantStream_currentEvent = new WeakMap(), _AssistantStream_currentRunSnapshot = new WeakMap(), _AssistantStream_currentRunStepSnapshot = new WeakMap(), _AssistantStream_instances = new WeakSet(), Symbol.asyncIterator)]() {
+        const pushQueue = [];
+        const readQueue = [];
+        let done = false;
+        //Catch all for passing along all events
+        this.on('event', (event) => {
+            const reader = readQueue.shift();
+            if (reader) {
+                reader.resolve(event);
+            }
+            else {
+                pushQueue.push(event);
+            }
+        });
+        this.on('end', () => {
+            done = true;
+            for (const reader of readQueue) {
+                reader.resolve(undefined);
+            }
+            readQueue.length = 0;
+        });
+        this.on('abort', (err) => {
+            done = true;
+            for (const reader of readQueue) {
+                reader.reject(err);
+            }
+            readQueue.length = 0;
+        });
+        this.on('error', (err) => {
+            done = true;
+            for (const reader of readQueue) {
+                reader.reject(err);
+            }
+            readQueue.length = 0;
+        });
+        return {
+            next: async () => {
+                if (!pushQueue.length) {
+                    if (done) {
+                        return { value: undefined, done: true };
+                    }
+                    return new Promise((resolve, reject) => readQueue.push({ resolve, reject })).then((chunk) => (chunk ? { value: chunk, done: false } : { value: undefined, done: true }));
+                }
+                const chunk = pushQueue.shift();
+                return { value: chunk, done: false };
+            },
+            return: async () => {
+                this.abort();
+                return { value: undefined, done: true };
+            },
+        };
+    }
+    static fromReadableStream(stream) {
+        const runner = new AssistantStream();
+        runner._run(() => runner._fromReadableStream(stream));
+        return runner;
+    }
+    async _fromReadableStream(readableStream, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        this._connected();
+        const stream = streaming_1.Stream.fromReadableStream(readableStream, this.controller);
+        for await (const event of stream) {
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+        }
+        if (stream.controller.signal?.aborted) {
+            throw new error_1.APIUserAbortError();
+        }
+        return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+    }
+    toReadableStream() {
+        const stream = new streaming_1.Stream(this[Symbol.asyncIterator].bind(this), this.controller);
+        return stream.toReadableStream();
+    }
+    static createToolAssistantStream(threadId, runId, runs, body, options) {
+        const runner = new AssistantStream();
+        runner._run(() => runner._runToolAssistantStream(threadId, runId, runs, body, {
+            ...options,
+            headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'stream' },
+        }));
+        return runner;
+    }
+    async _createToolAssistantStream(run, threadId, runId, params, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        const body = { ...params, stream: true };
+        const stream = await run.submitToolOutputs(threadId, runId, body, {
+            ...options,
+            signal: this.controller.signal,
+        });
+        this._connected();
+        for await (const event of stream) {
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+        }
+        if (stream.controller.signal?.aborted) {
+            throw new error_1.APIUserAbortError();
+        }
+        return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+    }
+    static createThreadAssistantStream(body, thread, options) {
+        const runner = new AssistantStream();
+        runner._run(() => runner._threadAssistantStream(body, thread, {
+            ...options,
+            headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'stream' },
+        }));
+        return runner;
+    }
+    static createAssistantStream(threadId, runs, params, options) {
+        const runner = new AssistantStream();
+        runner._run(() => runner._runAssistantStream(threadId, runs, params, {
+            ...options,
+            headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'stream' },
+        }));
+        return runner;
+    }
+    currentEvent() {
+        return __classPrivateFieldGet(this, _AssistantStream_currentEvent, "f");
+    }
+    currentRun() {
+        return __classPrivateFieldGet(this, _AssistantStream_currentRunSnapshot, "f");
+    }
+    currentMessageSnapshot() {
+        return __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f");
+    }
+    currentRunStepSnapshot() {
+        return __classPrivateFieldGet(this, _AssistantStream_currentRunStepSnapshot, "f");
+    }
+    async finalRunSteps() {
+        await this.done();
+        return Object.values(__classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f"));
+    }
+    async finalMessages() {
+        await this.done();
+        return Object.values(__classPrivateFieldGet(this, _AssistantStream_messageSnapshots, "f"));
+    }
+    async finalRun() {
+        await this.done();
+        if (!__classPrivateFieldGet(this, _AssistantStream_finalRun, "f"))
+            throw Error('Final run was not received.');
+        return __classPrivateFieldGet(this, _AssistantStream_finalRun, "f");
+    }
+    async _createThreadAssistantStream(thread, params, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        const body = { ...params, stream: true };
+        const stream = await thread.createAndRun(body, { ...options, signal: this.controller.signal });
+        this._connected();
+        for await (const event of stream) {
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+        }
+        if (stream.controller.signal?.aborted) {
+            throw new error_1.APIUserAbortError();
+        }
+        return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+    }
+    async _createAssistantStream(run, threadId, params, options) {
+        const signal = options?.signal;
+        if (signal) {
+            if (signal.aborted)
+                this.controller.abort();
+            signal.addEventListener('abort', () => this.controller.abort());
+        }
+        const body = { ...params, stream: true };
+        const stream = await run.create(threadId, body, { ...options, signal: this.controller.signal });
+        this._connected();
+        for await (const event of stream) {
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+        }
+        if (stream.controller.signal?.aborted) {
+            throw new error_1.APIUserAbortError();
+        }
+        return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+    }
+    static accumulateDelta(acc, delta) {
+        for (const [key, deltaValue] of Object.entries(delta)) {
+            if (!acc.hasOwnProperty(key)) {
+                acc[key] = deltaValue;
+                continue;
+            }
+            let accValue = acc[key];
+            if (accValue === null || accValue === undefined) {
+                acc[key] = deltaValue;
+                continue;
+            }
+            // We don't accumulate these special properties
+            if (key === 'index' || key === 'type') {
+                acc[key] = deltaValue;
+                continue;
+            }
+            // Type-specific accumulation logic
+            if (typeof accValue === 'string' && typeof deltaValue === 'string') {
+                accValue += deltaValue;
+            }
+            else if (typeof accValue === 'number' && typeof deltaValue === 'number') {
+                accValue += deltaValue;
+            }
+            else if (Core.isObj(accValue) && Core.isObj(deltaValue)) {
+                accValue = this.accumulateDelta(accValue, deltaValue);
+            }
+            else if (Array.isArray(accValue) && Array.isArray(deltaValue)) {
+                if (accValue.every((x) => typeof x === 'string' || typeof x === 'number')) {
+                    accValue.push(...deltaValue); // Use spread syntax for efficient addition
+                    continue;
+                }
+            }
+            else {
+                throw Error(`Unhandled record type: ${key}, deltaValue: ${deltaValue}, accValue: ${accValue}`);
+            }
+            acc[key] = accValue;
+        }
+        return acc;
+    }
+}
+exports.AssistantStream = AssistantStream;
+_AssistantStream_addEvent = function _AssistantStream_addEvent(event) {
+    if (this.ended)
+        return;
+    __classPrivateFieldSet(this, _AssistantStream_currentEvent, event, "f");
+    __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleEvent).call(this, event);
+    switch (event.event) {
+        case 'thread.created':
+            //No action on this event.
+            break;
+        case 'thread.run.created':
+        case 'thread.run.queued':
+        case 'thread.run.in_progress':
+        case 'thread.run.requires_action':
+        case 'thread.run.completed':
+        case 'thread.run.failed':
+        case 'thread.run.cancelling':
+        case 'thread.run.cancelled':
+        case 'thread.run.expired':
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleRun).call(this, event);
+            break;
+        case 'thread.run.step.created':
+        case 'thread.run.step.in_progress':
+        case 'thread.run.step.delta':
+        case 'thread.run.step.completed':
+        case 'thread.run.step.failed':
+        case 'thread.run.step.cancelled':
+        case 'thread.run.step.expired':
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleRunStep).call(this, event);
+            break;
+        case 'thread.message.created':
+        case 'thread.message.in_progress':
+        case 'thread.message.delta':
+        case 'thread.message.completed':
+        case 'thread.message.incomplete':
+            __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleMessage).call(this, event);
+            break;
+        case 'error':
+            //This is included for completeness, but errors are processed in the SSE event processing so this should not occur
+            throw new Error('Encountered an error event in event processing - errors should be processed earlier');
+    }
+}, _AssistantStream_endRequest = function _AssistantStream_endRequest() {
+    if (this.ended) {
+        throw new error_1.OpenAIError(`stream has ended, this shouldn't happen`);
+    }
+    if (!__classPrivateFieldGet(this, _AssistantStream_finalRun, "f"))
+        throw Error('Final run has not been received');
+    return __classPrivateFieldGet(this, _AssistantStream_finalRun, "f");
+}, _AssistantStream_handleMessage = function _AssistantStream_handleMessage(event) {
+    const [accumulatedMessage, newContent] = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateMessage).call(this, event, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+    __classPrivateFieldSet(this, _AssistantStream_messageSnapshot, accumulatedMessage, "f");
+    __classPrivateFieldGet(this, _AssistantStream_messageSnapshots, "f")[accumulatedMessage.id] = accumulatedMessage;
+    for (const content of newContent) {
+        const snapshotContent = accumulatedMessage.content[content.index];
+        if (snapshotContent?.type == 'text') {
+            this._emit('textCreated', snapshotContent.text);
+        }
+    }
+    switch (event.event) {
+        case 'thread.message.created':
+            this._emit('messageCreated', event.data);
+            break;
+        case 'thread.message.in_progress':
+            break;
+        case 'thread.message.delta':
+            this._emit('messageDelta', event.data.delta, accumulatedMessage);
+            if (event.data.delta.content) {
+                for (const content of event.data.delta.content) {
+                    //If it is text delta, emit a text delta event
+                    if (content.type == 'text' && content.text) {
+                        let textDelta = content.text;
+                        let snapshot = accumulatedMessage.content[content.index];
+                        if (snapshot && snapshot.type == 'text') {
+                            this._emit('textDelta', textDelta, snapshot.text);
+                        }
+                        else {
+                            throw Error('The snapshot associated with this text delta is not text or missing');
+                        }
+                    }
+                    if (content.index != __classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f")) {
+                        //See if we have in progress content
+                        if (__classPrivateFieldGet(this, _AssistantStream_currentContent, "f")) {
+                            switch (__classPrivateFieldGet(this, _AssistantStream_currentContent, "f").type) {
+                                case 'text':
+                                    this._emit('textDone', __classPrivateFieldGet(this, _AssistantStream_currentContent, "f").text, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                                    break;
+                                case 'image_file':
+                                    this._emit('imageFileDone', __classPrivateFieldGet(this, _AssistantStream_currentContent, "f").image_file, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                                    break;
+                            }
+                        }
+                        __classPrivateFieldSet(this, _AssistantStream_currentContentIndex, content.index, "f");
+                    }
+                    __classPrivateFieldSet(this, _AssistantStream_currentContent, accumulatedMessage.content[content.index], "f");
+                }
+            }
+            break;
+        case 'thread.message.completed':
+        case 'thread.message.incomplete':
+            //We emit the latest content we were working on on completion (including incomplete)
+            if (__classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f") !== undefined) {
+                const currentContent = event.data.content[__classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f")];
+                if (currentContent) {
+                    switch (currentContent.type) {
+                        case 'image_file':
+                            this._emit('imageFileDone', currentContent.image_file, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                            break;
+                        case 'text':
+                            this._emit('textDone', currentContent.text, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                            break;
+                    }
+                }
+            }
+            if (__classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f")) {
+                this._emit('messageDone', event.data);
+            }
+            __classPrivateFieldSet(this, _AssistantStream_messageSnapshot, undefined, "f");
+    }
+}, _AssistantStream_handleRunStep = function _AssistantStream_handleRunStep(event) {
+    const accumulatedRunStep = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateRunStep).call(this, event);
+    __classPrivateFieldSet(this, _AssistantStream_currentRunStepSnapshot, accumulatedRunStep, "f");
+    switch (event.event) {
+        case 'thread.run.step.created':
+            this._emit('runStepCreated', event.data);
+            break;
+        case 'thread.run.step.delta':
+            const delta = event.data.delta;
+            if (delta.step_details &&
+                delta.step_details.type == 'tool_calls' &&
+                delta.step_details.tool_calls &&
+                accumulatedRunStep.step_details.type == 'tool_calls') {
+                for (const toolCall of delta.step_details.tool_calls) {
+                    if (toolCall.index == __classPrivateFieldGet(this, _AssistantStream_currentToolCallIndex, "f")) {
+                        this._emit('toolCallDelta', toolCall, accumulatedRunStep.step_details.tool_calls[toolCall.index]);
+                    }
+                    else {
+                        if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+                            this._emit('toolCallDone', __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+                        }
+                        __classPrivateFieldSet(this, _AssistantStream_currentToolCallIndex, toolCall.index, "f");
+                        __classPrivateFieldSet(this, _AssistantStream_currentToolCall, accumulatedRunStep.step_details.tool_calls[toolCall.index], "f");
+                        if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"))
+                            this._emit('toolCallCreated', __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+                    }
+                }
+            }
+            this._emit('runStepDelta', event.data.delta, accumulatedRunStep);
+            break;
+        case 'thread.run.step.completed':
+        case 'thread.run.step.failed':
+        case 'thread.run.step.cancelled':
+        case 'thread.run.step.expired':
+            __classPrivateFieldSet(this, _AssistantStream_currentRunStepSnapshot, undefined, "f");
+            const details = event.data.step_details;
+            if (details.type == 'tool_calls') {
+                if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+                    this._emit('toolCallDone', __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+                    __classPrivateFieldSet(this, _AssistantStream_currentToolCall, undefined, "f");
+                }
+            }
+            this._emit('runStepDone', event.data, accumulatedRunStep);
+            break;
+        case 'thread.run.step.in_progress':
+            break;
+    }
+}, _AssistantStream_handleEvent = function _AssistantStream_handleEvent(event) {
+    __classPrivateFieldGet(this, _AssistantStream_events, "f").push(event);
+    this._emit('event', event);
+}, _AssistantStream_accumulateRunStep = function _AssistantStream_accumulateRunStep(event) {
+    switch (event.event) {
+        case 'thread.run.step.created':
+            __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = event.data;
+            return event.data;
+        case 'thread.run.step.delta':
+            let snapshot = __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+            if (!snapshot) {
+                throw Error('Received a RunStepDelta before creation of a snapshot');
+            }
+            let data = event.data;
+            if (data.delta) {
+                const accumulated = AssistantStream.accumulateDelta(snapshot, data.delta);
+                __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = accumulated;
+            }
+            return __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+        case 'thread.run.step.completed':
+        case 'thread.run.step.failed':
+        case 'thread.run.step.cancelled':
+        case 'thread.run.step.expired':
+        case 'thread.run.step.in_progress':
+            __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = event.data;
+            break;
+    }
+    if (__classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id])
+        return __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+    throw new Error('No snapshot available');
+}, _AssistantStream_accumulateMessage = function _AssistantStream_accumulateMessage(event, snapshot) {
+    let newContent = [];
+    switch (event.event) {
+        case 'thread.message.created':
+            //On creation the snapshot is just the initial message
+            return [event.data, newContent];
+        case 'thread.message.delta':
+            if (!snapshot) {
+                throw Error('Received a delta with no existing snapshot (there should be one from message creation)');
+            }
+            let data = event.data;
+            //If this delta does not have content, nothing to process
+            if (data.delta.content) {
+                for (const contentElement of data.delta.content) {
+                    if (contentElement.index in snapshot.content) {
+                        let currentContent = snapshot.content[contentElement.index];
+                        snapshot.content[contentElement.index] = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateContent).call(this, contentElement, currentContent);
+                    }
+                    else {
+                        snapshot.content[contentElement.index] = contentElement;
+                        // This is a new element
+                        newContent.push(contentElement);
+                    }
+                }
+            }
+            return [snapshot, newContent];
+        case 'thread.message.in_progress':
+        case 'thread.message.completed':
+        case 'thread.message.incomplete':
+            //No changes on other thread events
+            if (snapshot) {
+                return [snapshot, newContent];
+            }
+            else {
+                throw Error('Received thread message event with no existing snapshot');
+            }
+    }
+    throw Error('Tried to accumulate a non-message event');
+}, _AssistantStream_accumulateContent = function _AssistantStream_accumulateContent(contentElement, currentContent) {
+    return AssistantStream.accumulateDelta(currentContent, contentElement);
+}, _AssistantStream_handleRun = function _AssistantStream_handleRun(event) {
+    __classPrivateFieldSet(this, _AssistantStream_currentRunSnapshot, event.data, "f");
+    switch (event.event) {
+        case 'thread.run.created':
+            break;
+        case 'thread.run.queued':
+            break;
+        case 'thread.run.in_progress':
+            break;
+        case 'thread.run.requires_action':
+        case 'thread.run.cancelled':
+        case 'thread.run.failed':
+        case 'thread.run.completed':
+        case 'thread.run.expired':
+            __classPrivateFieldSet(this, _AssistantStream_finalRun, event.data, "f");
+            if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+                this._emit('toolCallDone', __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+                __classPrivateFieldSet(this, _AssistantStream_currentToolCall, undefined, "f");
+            }
+            break;
+        case 'thread.run.cancelling':
+            break;
+    }
+};
+//# sourceMappingURL=AssistantStream.js.map
+
+/***/ }),
+
+/***/ 5575:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ChatCompletionRunner = void 0;
-const AbstractChatCompletionRunner_1 = __nccwpck_require__(4982);
-const chatCompletionUtils_1 = __nccwpck_require__(4175);
+const AbstractChatCompletionRunner_1 = __nccwpck_require__(8398);
+const chatCompletionUtils_1 = __nccwpck_require__(7858);
 class ChatCompletionRunner extends AbstractChatCompletionRunner_1.AbstractChatCompletionRunner {
+    /** @deprecated - please use `runTools` instead. */
     static runFunctions(completions, params, options) {
         const runner = new ChatCompletionRunner();
-        runner._run(() => runner._runFunctions(completions, params, options));
+        const opts = {
+            ...options,
+            headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'runFunctions' },
+        };
+        runner._run(() => runner._runFunctions(completions, params, opts));
         return runner;
     }
     static runTools(completions, params, options) {
         const runner = new ChatCompletionRunner();
-        runner._run(() => runner._runTools(completions, params, options));
+        const opts = {
+            ...options,
+            headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'runTools' },
+        };
+        runner._run(() => runner._runTools(completions, params, opts));
         return runner;
     }
     _addMessage(message) {
@@ -12892,7 +13895,7 @@ exports.ChatCompletionRunner = ChatCompletionRunner;
 
 /***/ }),
 
-/***/ 3260:
+/***/ 7823:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
@@ -12911,9 +13914,9 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
 var _ChatCompletionStream_instances, _ChatCompletionStream_currentChatCompletionSnapshot, _ChatCompletionStream_beginRequest, _ChatCompletionStream_addChunk, _ChatCompletionStream_endRequest, _ChatCompletionStream_accumulateChatCompletion;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ChatCompletionStream = void 0;
-const error_1 = __nccwpck_require__(7251);
-const AbstractChatCompletionRunner_1 = __nccwpck_require__(4982);
-const streaming_1 = __nccwpck_require__(4056);
+const error_1 = __nccwpck_require__(8905);
+const AbstractChatCompletionRunner_1 = __nccwpck_require__(8398);
+const streaming_1 = __nccwpck_require__(884);
 class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCompletionRunner {
     constructor() {
         super(...arguments);
@@ -13007,7 +14010,7 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
         __classPrivateFieldSet(this, _ChatCompletionStream_currentChatCompletionSnapshot, undefined, "f");
         return finalizeChatCompletion(snapshot);
     }, _ChatCompletionStream_accumulateChatCompletion = function _ChatCompletionStream_accumulateChatCompletion(chunk) {
-        var _a, _b;
+        var _a, _b, _c;
         let snapshot = __classPrivateFieldGet(this, _ChatCompletionStream_currentChatCompletionSnapshot, "f");
         const { choices, ...rest } = chunk;
         if (!snapshot) {
@@ -13019,18 +14022,31 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
         else {
             Object.assign(snapshot, rest);
         }
-        for (const { delta, finish_reason, index, ...other } of chunk.choices) {
+        for (const { delta, finish_reason, index, logprobs = null, ...other } of chunk.choices) {
             let choice = snapshot.choices[index];
             if (!choice) {
-                snapshot.choices[index] = { finish_reason, index, message: delta, ...other };
-                continue;
+                choice = snapshot.choices[index] = { finish_reason, index, message: {}, logprobs, ...other };
+            }
+            if (logprobs) {
+                if (!choice.logprobs) {
+                    choice.logprobs = Object.assign({}, logprobs);
+                }
+                else {
+                    const { content, ...rest } = logprobs;
+                    Object.assign(choice.logprobs, rest);
+                    if (content) {
+                        (_a = choice.logprobs).content ?? (_a.content = []);
+                        choice.logprobs.content.push(...content);
+                    }
+                }
             }
             if (finish_reason)
                 choice.finish_reason = finish_reason;
             Object.assign(choice, other);
             if (!delta)
                 continue; // Shouldn't happen; just in case.
-            const { content, function_call, role, tool_calls } = delta;
+            const { content, function_call, role, tool_calls, ...rest } = delta;
+            Object.assign(choice.message, rest);
             if (content)
                 choice.message.content = (choice.message.content || '') + content;
             if (role)
@@ -13043,7 +14059,7 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
                     if (function_call.name)
                         choice.message.function_call.name = function_call.name;
                     if (function_call.arguments) {
-                        (_a = choice.message.function_call).arguments ?? (_a.arguments = '');
+                        (_b = choice.message.function_call).arguments ?? (_b.arguments = '');
                         choice.message.function_call.arguments += function_call.arguments;
                     }
                 }
@@ -13051,8 +14067,9 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
             if (tool_calls) {
                 if (!choice.message.tool_calls)
                     choice.message.tool_calls = [];
-                for (const { index, id, type, function: fn } of tool_calls) {
-                    const tool_call = ((_b = choice.message.tool_calls)[index] ?? (_b[index] = {}));
+                for (const { index, id, type, function: fn, ...rest } of tool_calls) {
+                    const tool_call = ((_c = choice.message.tool_calls)[index] ?? (_c[index] = {}));
+                    Object.assign(tool_call, rest);
                     if (id)
                         tool_call.id = id;
                     if (type)
@@ -13074,7 +14091,7 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
         this.on('chunk', (chunk) => {
             const reader = readQueue.shift();
             if (reader) {
-                reader(chunk);
+                reader.resolve(chunk);
             }
             else {
                 pushQueue.push(chunk);
@@ -13083,7 +14100,21 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
         this.on('end', () => {
             done = true;
             for (const reader of readQueue) {
-                reader(undefined);
+                reader.resolve(undefined);
+            }
+            readQueue.length = 0;
+        });
+        this.on('abort', (err) => {
+            done = true;
+            for (const reader of readQueue) {
+                reader.reject(err);
+            }
+            readQueue.length = 0;
+        });
+        this.on('error', (err) => {
+            done = true;
+            for (const reader of readQueue) {
+                reader.reject(err);
             }
             readQueue.length = 0;
         });
@@ -13093,10 +14124,14 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
                     if (done) {
                         return { value: undefined, done: true };
                     }
-                    return new Promise((resolve) => readQueue.push(resolve)).then((chunk) => (chunk ? { value: chunk, done: false } : { value: undefined, done: true }));
+                    return new Promise((resolve, reject) => readQueue.push({ resolve, reject })).then((chunk) => (chunk ? { value: chunk, done: false } : { value: undefined, done: true }));
                 }
                 const chunk = pushQueue.shift();
                 return { value: chunk, done: false };
+            },
+            return: async () => {
+                this.abort();
+                return { value: undefined, done: true };
             },
         };
     }
@@ -13107,13 +14142,14 @@ class ChatCompletionStream extends AbstractChatCompletionRunner_1.AbstractChatCo
 }
 exports.ChatCompletionStream = ChatCompletionStream;
 function finalizeChatCompletion(snapshot) {
-    const { id, choices, created, model } = snapshot;
+    const { id, choices, created, model, system_fingerprint, ...rest } = snapshot;
     return {
+        ...rest,
         id,
-        choices: choices.map(({ message, finish_reason, index }) => {
+        choices: choices.map(({ message, finish_reason, index, logprobs, ...choiceRest }) => {
             if (!finish_reason)
                 throw new error_1.OpenAIError(`missing finish_reason for choice ${index}`);
-            const { content = null, function_call, tool_calls } = message;
+            const { content = null, function_call, tool_calls, ...messageRest } = message;
             const role = message.role; // this is what we expect; in theory it could be different which would make our types a slight lie but would be fine.
             if (!role)
                 throw new error_1.OpenAIError(`missing role for choice ${index}`);
@@ -13123,18 +14159,27 @@ function finalizeChatCompletion(snapshot) {
                     throw new error_1.OpenAIError(`missing function_call.arguments for choice ${index}`);
                 if (!name)
                     throw new error_1.OpenAIError(`missing function_call.name for choice ${index}`);
-                return { message: { content, function_call: { arguments: args, name }, role }, finish_reason, index };
+                return {
+                    ...choiceRest,
+                    message: { content, function_call: { arguments: args, name }, role },
+                    finish_reason,
+                    index,
+                    logprobs,
+                };
             }
             if (tool_calls) {
                 return {
+                    ...choiceRest,
                     index,
                     finish_reason,
+                    logprobs,
                     message: {
+                        ...messageRest,
                         role,
                         content,
                         tool_calls: tool_calls.map((tool_call, i) => {
-                            const { function: fn, type, id } = tool_call;
-                            const { arguments: args, name } = fn || {};
+                            const { function: fn, type, id, ...toolRest } = tool_call;
+                            const { arguments: args, name, ...fnRest } = fn || {};
                             if (id == null)
                                 throw new error_1.OpenAIError(`missing choices[${index}].tool_calls[${i}].id\n${str(snapshot)}`);
                             if (type == null)
@@ -13143,16 +14188,23 @@ function finalizeChatCompletion(snapshot) {
                                 throw new error_1.OpenAIError(`missing choices[${index}].tool_calls[${i}].function.name\n${str(snapshot)}`);
                             if (args == null)
                                 throw new error_1.OpenAIError(`missing choices[${index}].tool_calls[${i}].function.arguments\n${str(snapshot)}`);
-                            return { id, type, function: { name, arguments: args } };
+                            return { ...toolRest, id, type, function: { ...fnRest, name, arguments: args } };
                         }),
                     },
                 };
             }
-            return { message: { content: content, role }, finish_reason, index };
+            return {
+                ...choiceRest,
+                message: { ...messageRest, content, role },
+                finish_reason,
+                index,
+                logprobs,
+            };
         }),
         created,
         model,
         object: 'chat.completion',
+        ...(system_fingerprint ? { system_fingerprint } : {}),
     };
 }
 function str(x) {
@@ -13162,34 +14214,37 @@ function str(x) {
 
 /***/ }),
 
-/***/ 7434:
+/***/ 794:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ChatCompletionStreamingRunner = void 0;
-const ChatCompletionStream_1 = __nccwpck_require__(3260);
+const ChatCompletionStream_1 = __nccwpck_require__(7823);
 class ChatCompletionStreamingRunner extends ChatCompletionStream_1.ChatCompletionStream {
     static fromReadableStream(stream) {
         const runner = new ChatCompletionStreamingRunner();
         runner._run(() => runner._fromReadableStream(stream));
         return runner;
     }
+    /** @deprecated - please use `runTools` instead. */
     static runFunctions(completions, params, options) {
         const runner = new ChatCompletionStreamingRunner();
-        runner._run(() => runner._runFunctions(completions, params, {
+        const opts = {
             ...options,
             headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'runFunctions' },
-        }));
+        };
+        runner._run(() => runner._runFunctions(completions, params, opts));
         return runner;
     }
     static runTools(completions, params, options) {
         const runner = new ChatCompletionStreamingRunner();
-        runner._run(() => runner._runTools(completions, params, {
+        const opts = {
             ...options,
             headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'runTools' },
-        }));
+        };
+        runner._run(() => runner._runTools(completions, params, opts));
         return runner;
     }
 }
@@ -13198,13 +14253,13 @@ exports.ChatCompletionStreamingRunner = ChatCompletionStreamingRunner;
 
 /***/ }),
 
-/***/ 1671:
+/***/ 5464:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ParsingFunction = exports.isRunnableFunctionWithParse = void 0;
+exports.ParsingToolFunction = exports.ParsingFunction = exports.isRunnableFunctionWithParse = void 0;
 function isRunnableFunctionWithParse(fn) {
     return typeof fn.parse === 'function';
 }
@@ -13212,6 +14267,8 @@ exports.isRunnableFunctionWithParse = isRunnableFunctionWithParse;
 /**
  * This is helper class for passing a `function` and `parse` where the `function`
  * argument type matches the `parse` return type.
+ *
+ * @deprecated - please use ParsingToolFunction instead.
  */
 class ParsingFunction {
     constructor(input) {
@@ -13223,11 +14280,55 @@ class ParsingFunction {
     }
 }
 exports.ParsingFunction = ParsingFunction;
+/**
+ * This is helper class for passing a `function` and `parse` where the `function`
+ * argument type matches the `parse` return type.
+ */
+class ParsingToolFunction {
+    constructor(input) {
+        this.type = 'function';
+        this.function = input;
+    }
+}
+exports.ParsingToolFunction = ParsingToolFunction;
 //# sourceMappingURL=RunnableFunction.js.map
 
 /***/ }),
 
-/***/ 4175:
+/***/ 2626:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.allSettledWithThrow = void 0;
+/**
+ * Like `Promise.allSettled()` but throws an error if any promises are rejected.
+ */
+const allSettledWithThrow = async (promises) => {
+    const results = await Promise.allSettled(promises);
+    const rejected = results.filter((result) => result.status === 'rejected');
+    if (rejected.length) {
+        for (const result of rejected) {
+            console.error(result.reason);
+        }
+        throw new Error(`${rejected.length} promise(s) failed - see the above errors`);
+    }
+    // Note: TS was complaining about using `.filter().map()` here for some reason
+    const values = [];
+    for (const result of results) {
+        if (result.status === 'fulfilled') {
+            values.push(result.value);
+        }
+    }
+    return values;
+};
+exports.allSettledWithThrow = allSettledWithThrow;
+//# sourceMappingURL=Util.js.map
+
+/***/ }),
+
+/***/ 7858:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -13254,26 +14355,26 @@ exports.isPresent = isPresent;
 
 /***/ }),
 
-/***/ 4646:
+/***/ 7401:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.CursorPage = exports.Page = void 0;
-const core_1 = __nccwpck_require__(8073);
+const core_1 = __nccwpck_require__(1798);
 /**
  * Note: no pagination actually occurs yet, this is for forwards-compatibility.
  */
 class Page extends core_1.AbstractPage {
     constructor(client, response, body, options) {
         super(client, response, body, options);
-        this.data = body.data;
+        this.data = body.data || [];
         this.object = body.object;
     }
     getPaginatedItems() {
-        return this.data;
+        return this.data ?? [];
     }
     // @deprecated Please use `nextPageInfo()` instead
     /**
@@ -13291,10 +14392,10 @@ exports.Page = Page;
 class CursorPage extends core_1.AbstractPage {
     constructor(client, response, body, options) {
         super(client, response, body, options);
-        this.data = body.data;
+        this.data = body.data || [];
     }
     getPaginatedItems() {
-        return this.data;
+        return this.data ?? [];
     }
     // @deprecated Please use `nextPageInfo()` instead
     nextPageParams() {
@@ -13309,13 +14410,15 @@ class CursorPage extends core_1.AbstractPage {
         return params;
     }
     nextPageInfo() {
-        if (!this.data?.length) {
+        const data = this.getPaginatedItems();
+        if (!data.length) {
             return null;
         }
-        const next = this.data[this.data.length - 1]?.id;
-        if (!next)
+        const id = data[data.length - 1]?.id;
+        if (!id) {
             return null;
-        return { params: { after: next } };
+        }
+        return { params: { after: id } };
     }
 }
 exports.CursorPage = CursorPage;
@@ -13323,12 +14426,12 @@ exports.CursorPage = CursorPage;
 
 /***/ }),
 
-/***/ 6058:
+/***/ 9593:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.APIResource = void 0;
 class APIResource {
@@ -13341,12 +14444,12 @@ exports.APIResource = APIResource;
 
 /***/ }),
 
-/***/ 7870:
+/***/ 6376:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13372,10 +14475,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Audio = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const SpeechAPI = __importStar(__nccwpck_require__(4283));
-const TranscriptionsAPI = __importStar(__nccwpck_require__(3806));
-const TranslationsAPI = __importStar(__nccwpck_require__(103));
+const resource_1 = __nccwpck_require__(9593);
+const SpeechAPI = __importStar(__nccwpck_require__(4117));
+const TranscriptionsAPI = __importStar(__nccwpck_require__(5622));
+const TranslationsAPI = __importStar(__nccwpck_require__(7735));
 class Audio extends resource_1.APIResource {
     constructor() {
         super(...arguments);
@@ -13394,15 +14497,15 @@ exports.Audio = Audio;
 
 /***/ }),
 
-/***/ 4283:
+/***/ 4117:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Speech = void 0;
-const resource_1 = __nccwpck_require__(6058);
+const resource_1 = __nccwpck_require__(9593);
 class Speech extends resource_1.APIResource {
     /**
      * Generates audio from the input text.
@@ -13418,16 +14521,16 @@ exports.Speech = Speech;
 
 /***/ }),
 
-/***/ 3806:
+/***/ 5622:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Transcriptions = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
 class Transcriptions extends resource_1.APIResource {
     /**
      * Transcribes audio into the input language.
@@ -13443,16 +14546,16 @@ exports.Transcriptions = Transcriptions;
 
 /***/ }),
 
-/***/ 103:
+/***/ 7735:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Translations = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
 class Translations extends resource_1.APIResource {
     /**
      * Translates audio into English.
@@ -13468,12 +14571,84 @@ exports.Translations = Translations;
 
 /***/ }),
 
-/***/ 1533:
+/***/ 341:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.BatchesPage = exports.Batches = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const BatchesAPI = __importStar(__nccwpck_require__(341));
+const pagination_1 = __nccwpck_require__(7401);
+class Batches extends resource_1.APIResource {
+    /**
+     * Creates and executes a batch from an uploaded file of requests
+     */
+    create(body, options) {
+        return this._client.post('/batches', { body, ...options });
+    }
+    /**
+     * Retrieves a batch.
+     */
+    retrieve(batchId, options) {
+        return this._client.get(`/batches/${batchId}`, options);
+    }
+    list(query = {}, options) {
+        if ((0, core_1.isRequestOptions)(query)) {
+            return this.list({}, query);
+        }
+        return this._client.getAPIList('/batches', BatchesPage, { query, ...options });
+    }
+    /**
+     * Cancels an in-progress batch.
+     */
+    cancel(batchId, options) {
+        return this._client.post(`/batches/${batchId}/cancel`, options);
+    }
+}
+exports.Batches = Batches;
+class BatchesPage extends pagination_1.CursorPage {
+}
+exports.BatchesPage = BatchesPage;
+(function (Batches) {
+    Batches.BatchesPage = BatchesAPI.BatchesPage;
+})(Batches = exports.Batches || (exports.Batches = {}));
+//# sourceMappingURL=batches.js.map
+
+/***/ }),
+
+/***/ 616:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13499,16 +14674,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AssistantsPage = exports.Assistants = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const AssistantsAPI = __importStar(__nccwpck_require__(1533));
-const FilesAPI = __importStar(__nccwpck_require__(4784));
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const AssistantsAPI = __importStar(__nccwpck_require__(616));
+const pagination_1 = __nccwpck_require__(7401);
 class Assistants extends resource_1.APIResource {
-    constructor() {
-        super(...arguments);
-        this.files = new FilesAPI.Files(this._client);
-    }
     /**
      * Create an assistant with a model and instructions.
      */
@@ -13516,7 +14686,7 @@ class Assistants extends resource_1.APIResource {
         return this._client.post('/assistants', {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -13525,7 +14695,7 @@ class Assistants extends resource_1.APIResource {
     retrieve(assistantId, options) {
         return this._client.get(`/assistants/${assistantId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -13535,7 +14705,7 @@ class Assistants extends resource_1.APIResource {
         return this._client.post(`/assistants/${assistantId}`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     list(query = {}, options) {
@@ -13545,7 +14715,7 @@ class Assistants extends resource_1.APIResource {
         return this._client.getAPIList('/assistants', AssistantsPage, {
             query,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -13554,7 +14724,7 @@ class Assistants extends resource_1.APIResource {
     del(assistantId, options) {
         return this._client.delete(`/assistants/${assistantId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
 }
@@ -13564,107 +14734,17 @@ class AssistantsPage extends pagination_1.CursorPage {
 exports.AssistantsPage = AssistantsPage;
 (function (Assistants) {
     Assistants.AssistantsPage = AssistantsAPI.AssistantsPage;
-    Assistants.Files = FilesAPI.Files;
-    Assistants.AssistantFilesPage = FilesAPI.AssistantFilesPage;
 })(Assistants = exports.Assistants || (exports.Assistants = {}));
 //# sourceMappingURL=assistants.js.map
 
 /***/ }),
 
-/***/ 4784:
+/***/ 853:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AssistantFilesPage = exports.Files = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const FilesAPI = __importStar(__nccwpck_require__(4784));
-const pagination_1 = __nccwpck_require__(4646);
-class Files extends resource_1.APIResource {
-    /**
-     * Create an assistant file by attaching a
-     * [File](https://platform.openai.com/docs/api-reference/files) to an
-     * [assistant](https://platform.openai.com/docs/api-reference/assistants).
-     */
-    create(assistantId, body, options) {
-        return this._client.post(`/assistants/${assistantId}/files`, {
-            body,
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-    /**
-     * Retrieves an AssistantFile.
-     */
-    retrieve(assistantId, fileId, options) {
-        return this._client.get(`/assistants/${assistantId}/files/${fileId}`, {
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-    list(assistantId, query = {}, options) {
-        if ((0, core_1.isRequestOptions)(query)) {
-            return this.list(assistantId, {}, query);
-        }
-        return this._client.getAPIList(`/assistants/${assistantId}/files`, AssistantFilesPage, {
-            query,
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-    /**
-     * Delete an assistant file.
-     */
-    del(assistantId, fileId, options) {
-        return this._client.delete(`/assistants/${assistantId}/files/${fileId}`, {
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-}
-exports.Files = Files;
-class AssistantFilesPage extends pagination_1.CursorPage {
-}
-exports.AssistantFilesPage = AssistantFilesPage;
-(function (Files) {
-    Files.AssistantFilesPage = FilesAPI.AssistantFilesPage;
-})(Files = exports.Files || (exports.Files = {}));
-//# sourceMappingURL=files.js.map
-
-/***/ }),
-
-/***/ 2882:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13690,13 +14770,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Beta = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const AssistantsAPI = __importStar(__nccwpck_require__(1533));
-const ChatAPI = __importStar(__nccwpck_require__(1081));
-const ThreadsAPI = __importStar(__nccwpck_require__(8054));
+const resource_1 = __nccwpck_require__(9593);
+const AssistantsAPI = __importStar(__nccwpck_require__(616));
+const ChatAPI = __importStar(__nccwpck_require__(8691));
+const ThreadsAPI = __importStar(__nccwpck_require__(1931));
+const VectorStoresAPI = __importStar(__nccwpck_require__(5822));
 class Beta extends resource_1.APIResource {
     constructor() {
         super(...arguments);
+        this.vectorStores = new VectorStoresAPI.VectorStores(this._client);
         this.chat = new ChatAPI.Chat(this._client);
         this.assistants = new AssistantsAPI.Assistants(this._client);
         this.threads = new ThreadsAPI.Threads(this._client);
@@ -13704,6 +14786,8 @@ class Beta extends resource_1.APIResource {
 }
 exports.Beta = Beta;
 (function (Beta) {
+    Beta.VectorStores = VectorStoresAPI.VectorStores;
+    Beta.VectorStoresPage = VectorStoresAPI.VectorStoresPage;
     Beta.Chat = ChatAPI.Chat;
     Beta.Assistants = AssistantsAPI.Assistants;
     Beta.AssistantsPage = AssistantsAPI.AssistantsPage;
@@ -13713,12 +14797,12 @@ exports.Beta = Beta;
 
 /***/ }),
 
-/***/ 1081:
+/***/ 8691:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13744,8 +14828,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Chat = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const CompletionsAPI = __importStar(__nccwpck_require__(7292));
+const resource_1 = __nccwpck_require__(9593);
+const CompletionsAPI = __importStar(__nccwpck_require__(559));
 class Chat extends resource_1.APIResource {
     constructor() {
         super(...arguments);
@@ -13760,25 +14844,26 @@ exports.Chat = Chat;
 
 /***/ }),
 
-/***/ 7292:
+/***/ 559:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Completions = exports.ChatCompletionStream = exports.ParsingFunction = exports.ChatCompletionStreamingRunner = exports.ChatCompletionRunner = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const ChatCompletionRunner_1 = __nccwpck_require__(3511);
-var ChatCompletionRunner_2 = __nccwpck_require__(3511);
+exports.Completions = exports.ChatCompletionStream = exports.ParsingToolFunction = exports.ParsingFunction = exports.ChatCompletionStreamingRunner = exports.ChatCompletionRunner = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const ChatCompletionRunner_1 = __nccwpck_require__(5575);
+var ChatCompletionRunner_2 = __nccwpck_require__(5575);
 Object.defineProperty(exports, "ChatCompletionRunner", ({ enumerable: true, get: function () { return ChatCompletionRunner_2.ChatCompletionRunner; } }));
-const ChatCompletionStreamingRunner_1 = __nccwpck_require__(7434);
-var ChatCompletionStreamingRunner_2 = __nccwpck_require__(7434);
+const ChatCompletionStreamingRunner_1 = __nccwpck_require__(794);
+var ChatCompletionStreamingRunner_2 = __nccwpck_require__(794);
 Object.defineProperty(exports, "ChatCompletionStreamingRunner", ({ enumerable: true, get: function () { return ChatCompletionStreamingRunner_2.ChatCompletionStreamingRunner; } }));
-var RunnableFunction_1 = __nccwpck_require__(1671);
+var RunnableFunction_1 = __nccwpck_require__(5464);
 Object.defineProperty(exports, "ParsingFunction", ({ enumerable: true, get: function () { return RunnableFunction_1.ParsingFunction; } }));
-const ChatCompletionStream_1 = __nccwpck_require__(3260);
-var ChatCompletionStream_2 = __nccwpck_require__(3260);
+Object.defineProperty(exports, "ParsingToolFunction", ({ enumerable: true, get: function () { return RunnableFunction_1.ParsingToolFunction; } }));
+const ChatCompletionStream_1 = __nccwpck_require__(7823);
+var ChatCompletionStream_2 = __nccwpck_require__(7823);
 Object.defineProperty(exports, "ChatCompletionStream", ({ enumerable: true, get: function () { return ChatCompletionStream_2.ChatCompletionStream; } }));
 class Completions extends resource_1.APIResource {
     runFunctions(body, options) {
@@ -13805,12 +14890,12 @@ exports.Completions = Completions;
 
 /***/ }),
 
-/***/ 5211:
+/***/ 1787:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13835,84 +14920,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.MessageFilesPage = exports.Files = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const FilesAPI = __importStar(__nccwpck_require__(5211));
-const pagination_1 = __nccwpck_require__(4646);
-class Files extends resource_1.APIResource {
-    /**
-     * Retrieves a message file.
-     */
-    retrieve(threadId, messageId, fileId, options) {
-        return this._client.get(`/threads/${threadId}/messages/${messageId}/files/${fileId}`, {
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-    list(threadId, messageId, query = {}, options) {
-        if ((0, core_1.isRequestOptions)(query)) {
-            return this.list(threadId, messageId, {}, query);
-        }
-        return this._client.getAPIList(`/threads/${threadId}/messages/${messageId}/files`, MessageFilesPage, {
-            query,
-            ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
-        });
-    }
-}
-exports.Files = Files;
-class MessageFilesPage extends pagination_1.CursorPage {
-}
-exports.MessageFilesPage = MessageFilesPage;
-(function (Files) {
-    Files.MessageFilesPage = FilesAPI.MessageFilesPage;
-})(Files = exports.Files || (exports.Files = {}));
-//# sourceMappingURL=files.js.map
-
-/***/ }),
-
-/***/ 452:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-// File generated from our OpenAPI spec by Stainless.
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ThreadMessagesPage = exports.Messages = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const MessagesAPI = __importStar(__nccwpck_require__(452));
-const FilesAPI = __importStar(__nccwpck_require__(5211));
-const pagination_1 = __nccwpck_require__(4646);
+exports.MessagesPage = exports.Messages = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const MessagesAPI = __importStar(__nccwpck_require__(1787));
+const pagination_1 = __nccwpck_require__(7401);
 class Messages extends resource_1.APIResource {
-    constructor() {
-        super(...arguments);
-        this.files = new FilesAPI.Files(this._client);
-    }
     /**
      * Create a message.
      */
@@ -13920,7 +14933,7 @@ class Messages extends resource_1.APIResource {
         return this._client.post(`/threads/${threadId}/messages`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -13929,7 +14942,7 @@ class Messages extends resource_1.APIResource {
     retrieve(threadId, messageId, options) {
         return this._client.get(`/threads/${threadId}/messages/${messageId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -13939,39 +14952,46 @@ class Messages extends resource_1.APIResource {
         return this._client.post(`/threads/${threadId}/messages/${messageId}`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     list(threadId, query = {}, options) {
         if ((0, core_1.isRequestOptions)(query)) {
             return this.list(threadId, {}, query);
         }
-        return this._client.getAPIList(`/threads/${threadId}/messages`, ThreadMessagesPage, {
+        return this._client.getAPIList(`/threads/${threadId}/messages`, MessagesPage, {
             query,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Deletes a message.
+     */
+    del(threadId, messageId, options) {
+        return this._client.delete(`/threads/${threadId}/messages/${messageId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
 }
 exports.Messages = Messages;
-class ThreadMessagesPage extends pagination_1.CursorPage {
+class MessagesPage extends pagination_1.CursorPage {
 }
-exports.ThreadMessagesPage = ThreadMessagesPage;
+exports.MessagesPage = MessagesPage;
 (function (Messages) {
-    Messages.ThreadMessagesPage = MessagesAPI.ThreadMessagesPage;
-    Messages.Files = FilesAPI.Files;
-    Messages.MessageFilesPage = FilesAPI.MessageFilesPage;
+    Messages.MessagesPage = MessagesAPI.MessagesPage;
 })(Messages = exports.Messages || (exports.Messages = {}));
 //# sourceMappingURL=messages.js.map
 
 /***/ }),
 
-/***/ 4262:
+/***/ 3187:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -13997,24 +15017,24 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RunsPage = exports.Runs = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const RunsAPI = __importStar(__nccwpck_require__(4262));
-const StepsAPI = __importStar(__nccwpck_require__(5531));
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const AssistantStream_1 = __nccwpck_require__(7514);
+const core_2 = __nccwpck_require__(1798);
+const RunsAPI = __importStar(__nccwpck_require__(3187));
+const StepsAPI = __importStar(__nccwpck_require__(2630));
+const pagination_1 = __nccwpck_require__(7401);
 class Runs extends resource_1.APIResource {
     constructor() {
         super(...arguments);
         this.steps = new StepsAPI.Steps(this._client);
     }
-    /**
-     * Create a run.
-     */
     create(threadId, body, options) {
         return this._client.post(`/threads/${threadId}/runs`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+            stream: body.stream ?? false,
         });
     }
     /**
@@ -14023,7 +15043,7 @@ class Runs extends resource_1.APIResource {
     retrieve(threadId, runId, options) {
         return this._client.get(`/threads/${threadId}/runs/${runId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -14033,7 +15053,7 @@ class Runs extends resource_1.APIResource {
         return this._client.post(`/threads/${threadId}/runs/${runId}`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     list(threadId, query = {}, options) {
@@ -14043,7 +15063,7 @@ class Runs extends resource_1.APIResource {
         return this._client.getAPIList(`/threads/${threadId}/runs`, RunsPage, {
             query,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -14052,21 +15072,101 @@ class Runs extends resource_1.APIResource {
     cancel(threadId, runId, options) {
         return this._client.post(`/threads/${threadId}/runs/${runId}/cancel`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
-     * When a run has the `status: "requires_action"` and `required_action.type` is
-     * `submit_tool_outputs`, this endpoint can be used to submit the outputs from the
-     * tool calls once they're all completed. All outputs must be submitted in a single
-     * request.
+     * A helper to create a run an poll for a terminal state. More information on Run
+     * lifecycles can be found here:
+     * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
      */
+    async createAndPoll(threadId, body, options) {
+        const run = await this.create(threadId, body, options);
+        return await this.poll(threadId, run.id, options);
+    }
+    /**
+     * Create a Run stream
+     *
+     * @deprecated use `stream` instead
+     */
+    createAndStream(threadId, body, options) {
+        return AssistantStream_1.AssistantStream.createAssistantStream(threadId, this._client.beta.threads.runs, body, options);
+    }
+    /**
+     * A helper to poll a run status until it reaches a terminal state. More
+     * information on Run lifecycles can be found here:
+     * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+     */
+    async poll(threadId, runId, options) {
+        const headers = { ...options?.headers, 'X-Stainless-Poll-Helper': 'true' };
+        if (options?.pollIntervalMs) {
+            headers['X-Stainless-Custom-Poll-Interval'] = options.pollIntervalMs.toString();
+        }
+        while (true) {
+            const { data: run, response } = await this.retrieve(threadId, runId, {
+                ...options,
+                headers: { ...options?.headers, ...headers },
+            }).withResponse();
+            switch (run.status) {
+                //If we are in any sort of intermediate state we poll
+                case 'queued':
+                case 'in_progress':
+                case 'cancelling':
+                    let sleepInterval = 5000;
+                    if (options?.pollIntervalMs) {
+                        sleepInterval = options.pollIntervalMs;
+                    }
+                    else {
+                        const headerInterval = response.headers.get('openai-poll-after-ms');
+                        if (headerInterval) {
+                            const headerIntervalMs = parseInt(headerInterval);
+                            if (!isNaN(headerIntervalMs)) {
+                                sleepInterval = headerIntervalMs;
+                            }
+                        }
+                    }
+                    await (0, core_2.sleep)(sleepInterval);
+                    break;
+                //We return the run in any terminal state.
+                case 'requires_action':
+                case 'cancelled':
+                case 'completed':
+                case 'failed':
+                case 'expired':
+                    return run;
+            }
+        }
+    }
+    /**
+     * Create a Run stream
+     */
+    stream(threadId, body, options) {
+        return AssistantStream_1.AssistantStream.createAssistantStream(threadId, this._client.beta.threads.runs, body, options);
+    }
     submitToolOutputs(threadId, runId, body, options) {
         return this._client.post(`/threads/${threadId}/runs/${runId}/submit_tool_outputs`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+            stream: body.stream ?? false,
         });
+    }
+    /**
+     * A helper to submit a tool output to a run and poll for a terminal run state.
+     * More information on Run lifecycles can be found here:
+     * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+     */
+    async submitToolOutputsAndPoll(threadId, runId, body, options) {
+        const run = await this.submitToolOutputs(threadId, runId, body, options);
+        return await this.poll(threadId, run.id, options);
+    }
+    /**
+     * Submit the tool outputs from a previous run and stream the run to a terminal
+     * state. More information on Run lifecycles can be found here:
+     * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+     */
+    submitToolOutputsStream(threadId, runId, body, options) {
+        return AssistantStream_1.AssistantStream.createToolAssistantStream(threadId, runId, this._client.beta.threads.runs, body, options);
     }
 }
 exports.Runs = Runs;
@@ -14082,12 +15182,12 @@ exports.RunsPage = RunsPage;
 
 /***/ }),
 
-/***/ 5531:
+/***/ 2630:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14113,10 +15213,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RunStepsPage = exports.Steps = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const StepsAPI = __importStar(__nccwpck_require__(5531));
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const StepsAPI = __importStar(__nccwpck_require__(2630));
+const pagination_1 = __nccwpck_require__(7401);
 class Steps extends resource_1.APIResource {
     /**
      * Retrieves a run step.
@@ -14124,7 +15224,7 @@ class Steps extends resource_1.APIResource {
     retrieve(threadId, runId, stepId, options) {
         return this._client.get(`/threads/${threadId}/runs/${runId}/steps/${stepId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     list(threadId, runId, query = {}, options) {
@@ -14134,7 +15234,7 @@ class Steps extends resource_1.APIResource {
         return this._client.getAPIList(`/threads/${threadId}/runs/${runId}/steps`, RunStepsPage, {
             query,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
 }
@@ -14149,12 +15249,12 @@ exports.RunStepsPage = RunStepsPage;
 
 /***/ }),
 
-/***/ 8054:
+/***/ 1931:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14180,10 +15280,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Threads = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const MessagesAPI = __importStar(__nccwpck_require__(452));
-const RunsAPI = __importStar(__nccwpck_require__(4262));
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const AssistantStream_1 = __nccwpck_require__(7514);
+const MessagesAPI = __importStar(__nccwpck_require__(1787));
+const RunsAPI = __importStar(__nccwpck_require__(3187));
 class Threads extends resource_1.APIResource {
     constructor() {
         super(...arguments);
@@ -14197,7 +15298,7 @@ class Threads extends resource_1.APIResource {
         return this._client.post('/threads', {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -14206,7 +15307,7 @@ class Threads extends resource_1.APIResource {
     retrieve(threadId, options) {
         return this._client.get(`/threads/${threadId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -14216,7 +15317,7 @@ class Threads extends resource_1.APIResource {
         return this._client.post(`/threads/${threadId}`, {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
     /**
@@ -14225,18 +15326,31 @@ class Threads extends resource_1.APIResource {
     del(threadId, options) {
         return this._client.delete(`/threads/${threadId}`, {
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
         });
     }
-    /**
-     * Create a thread and run it in one request.
-     */
     createAndRun(body, options) {
         return this._client.post('/threads/runs', {
             body,
             ...options,
-            headers: { 'OpenAI-Beta': 'assistants=v1', ...options?.headers },
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+            stream: body.stream ?? false,
         });
+    }
+    /**
+     * A helper to create a thread, start a run and then poll for a terminal state.
+     * More information on Run lifecycles can be found here:
+     * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+     */
+    async createAndRunPoll(body, options) {
+        const run = await this.createAndRun(body, options);
+        return await this.runs.poll(run.thread_id, run.id, options);
+    }
+    /**
+     * Create a thread and stream the run back
+     */
+    createAndRunStream(body, options) {
+        return AssistantStream_1.AssistantStream.createThreadAssistantStream(body, this._client.beta.threads, options);
     }
 }
 exports.Threads = Threads;
@@ -14244,18 +15358,415 @@ exports.Threads = Threads;
     Threads.Runs = RunsAPI.Runs;
     Threads.RunsPage = RunsAPI.RunsPage;
     Threads.Messages = MessagesAPI.Messages;
-    Threads.ThreadMessagesPage = MessagesAPI.ThreadMessagesPage;
+    Threads.MessagesPage = MessagesAPI.MessagesPage;
 })(Threads = exports.Threads || (exports.Threads = {}));
 //# sourceMappingURL=threads.js.map
 
 /***/ }),
 
-/***/ 538:
+/***/ 3922:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.VectorStoreFilesPage = exports.FileBatches = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const core_2 = __nccwpck_require__(1798);
+const Util_1 = __nccwpck_require__(2626);
+const files_1 = __nccwpck_require__(9180);
+Object.defineProperty(exports, "VectorStoreFilesPage", ({ enumerable: true, get: function () { return files_1.VectorStoreFilesPage; } }));
+class FileBatches extends resource_1.APIResource {
+    /**
+     * Create a vector store file batch.
+     */
+    create(vectorStoreId, body, options) {
+        return this._client.post(`/vector_stores/${vectorStoreId}/file_batches`, {
+            body,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Retrieves a vector store file batch.
+     */
+    retrieve(vectorStoreId, batchId, options) {
+        return this._client.get(`/vector_stores/${vectorStoreId}/file_batches/${batchId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Cancel a vector store file batch. This attempts to cancel the processing of
+     * files in this batch as soon as possible.
+     */
+    cancel(vectorStoreId, batchId, options) {
+        return this._client.post(`/vector_stores/${vectorStoreId}/file_batches/${batchId}/cancel`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Create a vector store batch and poll until all files have been processed.
+     */
+    async createAndPoll(vectorStoreId, body, options) {
+        const batch = await this.create(vectorStoreId, body);
+        return await this.poll(vectorStoreId, batch.id, options);
+    }
+    listFiles(vectorStoreId, batchId, query = {}, options) {
+        if ((0, core_1.isRequestOptions)(query)) {
+            return this.listFiles(vectorStoreId, batchId, {}, query);
+        }
+        return this._client.getAPIList(`/vector_stores/${vectorStoreId}/file_batches/${batchId}/files`, files_1.VectorStoreFilesPage, { query, ...options, headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers } });
+    }
+    /**
+     * Wait for the given file batch to be processed.
+     *
+     * Note: this will return even if one of the files failed to process, you need to
+     * check batch.file_counts.failed_count to handle this case.
+     */
+    async poll(vectorStoreId, batchId, options) {
+        const headers = { ...options?.headers, 'X-Stainless-Poll-Helper': 'true' };
+        if (options?.pollIntervalMs) {
+            headers['X-Stainless-Custom-Poll-Interval'] = options.pollIntervalMs.toString();
+        }
+        while (true) {
+            const { data: batch, response } = await this.retrieve(vectorStoreId, batchId, {
+                ...options,
+                headers,
+            }).withResponse();
+            switch (batch.status) {
+                case 'in_progress':
+                    let sleepInterval = 5000;
+                    if (options?.pollIntervalMs) {
+                        sleepInterval = options.pollIntervalMs;
+                    }
+                    else {
+                        const headerInterval = response.headers.get('openai-poll-after-ms');
+                        if (headerInterval) {
+                            const headerIntervalMs = parseInt(headerInterval);
+                            if (!isNaN(headerIntervalMs)) {
+                                sleepInterval = headerIntervalMs;
+                            }
+                        }
+                    }
+                    await (0, core_2.sleep)(sleepInterval);
+                    break;
+                case 'failed':
+                case 'completed':
+                    return batch;
+            }
+        }
+    }
+    /**
+     * Uploads the given files concurrently and then creates a vector store file batch.
+     *
+     * The concurrency limit is configurable using the `maxConcurrency` parameter.
+     */
+    async uploadAndPoll(vectorStoreId, { files, fileIds = [] }, options) {
+        if (files === null || files.length == 0) {
+            throw new Error('No files provided to process.');
+        }
+        const configuredConcurrency = options?.maxConcurrency ?? 5;
+        //We cap the number of workers at the number of files (so we don't start any unnecessary workers)
+        const concurrencyLimit = Math.min(configuredConcurrency, files.length);
+        const client = this._client;
+        const fileIterator = files.values();
+        const allFileIds = [...fileIds];
+        //This code is based on this design. The libraries don't accommodate our environment limits.
+        // https://stackoverflow.com/questions/40639432/what-is-the-best-way-to-limit-concurrency-when-using-es6s-promise-all
+        async function processFiles(iterator) {
+            for (let item of iterator) {
+                const fileObj = await client.files.create({ file: item, purpose: 'assistants' }, options);
+                allFileIds.push(fileObj.id);
+            }
+        }
+        //Start workers to process results
+        const workers = Array(concurrencyLimit).fill(fileIterator).map(processFiles);
+        //Wait for all processing to complete.
+        await (0, Util_1.allSettledWithThrow)(workers);
+        return await this.createAndPoll(vectorStoreId, {
+            file_ids: allFileIds,
+        });
+    }
+}
+exports.FileBatches = FileBatches;
+(function (FileBatches) {
+})(FileBatches = exports.FileBatches || (exports.FileBatches = {}));
+//# sourceMappingURL=file-batches.js.map
+
+/***/ }),
+
+/***/ 9180:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.VectorStoreFilesPage = exports.Files = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const core_2 = __nccwpck_require__(1798);
+const FilesAPI = __importStar(__nccwpck_require__(9180));
+const pagination_1 = __nccwpck_require__(7401);
+class Files extends resource_1.APIResource {
+    /**
+     * Create a vector store file by attaching a
+     * [File](https://platform.openai.com/docs/api-reference/files) to a
+     * [vector store](https://platform.openai.com/docs/api-reference/vector-stores/object).
+     */
+    create(vectorStoreId, body, options) {
+        return this._client.post(`/vector_stores/${vectorStoreId}/files`, {
+            body,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Retrieves a vector store file.
+     */
+    retrieve(vectorStoreId, fileId, options) {
+        return this._client.get(`/vector_stores/${vectorStoreId}/files/${fileId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    list(vectorStoreId, query = {}, options) {
+        if ((0, core_1.isRequestOptions)(query)) {
+            return this.list(vectorStoreId, {}, query);
+        }
+        return this._client.getAPIList(`/vector_stores/${vectorStoreId}/files`, VectorStoreFilesPage, {
+            query,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Delete a vector store file. This will remove the file from the vector store but
+     * the file itself will not be deleted. To delete the file, use the
+     * [delete file](https://platform.openai.com/docs/api-reference/files/delete)
+     * endpoint.
+     */
+    del(vectorStoreId, fileId, options) {
+        return this._client.delete(`/vector_stores/${vectorStoreId}/files/${fileId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Attach a file to the given vector store and wait for it to be processed.
+     */
+    async createAndPoll(vectorStoreId, body, options) {
+        const file = await this.create(vectorStoreId, body, options);
+        return await this.poll(vectorStoreId, file.id, options);
+    }
+    /**
+     * Wait for the vector store file to finish processing.
+     *
+     * Note: this will return even if the file failed to process, you need to check
+     * file.last_error and file.status to handle these cases
+     */
+    async poll(vectorStoreId, fileId, options) {
+        const headers = { ...options?.headers, 'X-Stainless-Poll-Helper': 'true' };
+        if (options?.pollIntervalMs) {
+            headers['X-Stainless-Custom-Poll-Interval'] = options.pollIntervalMs.toString();
+        }
+        while (true) {
+            const fileResponse = await this.retrieve(vectorStoreId, fileId, {
+                ...options,
+                headers,
+            }).withResponse();
+            const file = fileResponse.data;
+            switch (file.status) {
+                case 'in_progress':
+                    let sleepInterval = 5000;
+                    if (options?.pollIntervalMs) {
+                        sleepInterval = options.pollIntervalMs;
+                    }
+                    else {
+                        const headerInterval = fileResponse.response.headers.get('openai-poll-after-ms');
+                        if (headerInterval) {
+                            const headerIntervalMs = parseInt(headerInterval);
+                            if (!isNaN(headerIntervalMs)) {
+                                sleepInterval = headerIntervalMs;
+                            }
+                        }
+                    }
+                    await (0, core_2.sleep)(sleepInterval);
+                    break;
+                case 'failed':
+                case 'completed':
+                    return file;
+            }
+        }
+    }
+    /**
+     * Upload a file to the `files` API and then attach it to the given vector store.
+     *
+     * Note the file will be asynchronously processed (you can use the alternative
+     * polling helper method to wait for processing to complete).
+     */
+    async upload(vectorStoreId, file, options) {
+        const fileInfo = await this._client.files.create({ file: file, purpose: 'assistants' }, options);
+        return this.create(vectorStoreId, { file_id: fileInfo.id }, options);
+    }
+    /**
+     * Add a file to a vector store and poll until processing is complete.
+     */
+    async uploadAndPoll(vectorStoreId, file, options) {
+        const fileInfo = await this.upload(vectorStoreId, file, options);
+        return await this.poll(vectorStoreId, fileInfo.id, options);
+    }
+}
+exports.Files = Files;
+class VectorStoreFilesPage extends pagination_1.CursorPage {
+}
+exports.VectorStoreFilesPage = VectorStoreFilesPage;
+(function (Files) {
+    Files.VectorStoreFilesPage = FilesAPI.VectorStoreFilesPage;
+})(Files = exports.Files || (exports.Files = {}));
+//# sourceMappingURL=files.js.map
+
+/***/ }),
+
+/***/ 5822:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.VectorStoresPage = exports.VectorStores = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const VectorStoresAPI = __importStar(__nccwpck_require__(5822));
+const FileBatchesAPI = __importStar(__nccwpck_require__(3922));
+const FilesAPI = __importStar(__nccwpck_require__(9180));
+const pagination_1 = __nccwpck_require__(7401);
+class VectorStores extends resource_1.APIResource {
+    constructor() {
+        super(...arguments);
+        this.files = new FilesAPI.Files(this._client);
+        this.fileBatches = new FileBatchesAPI.FileBatches(this._client);
+    }
+    /**
+     * Create a vector store.
+     */
+    create(body, options) {
+        return this._client.post('/vector_stores', {
+            body,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Retrieves a vector store.
+     */
+    retrieve(vectorStoreId, options) {
+        return this._client.get(`/vector_stores/${vectorStoreId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Modifies a vector store.
+     */
+    update(vectorStoreId, body, options) {
+        return this._client.post(`/vector_stores/${vectorStoreId}`, {
+            body,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    list(query = {}, options) {
+        if ((0, core_1.isRequestOptions)(query)) {
+            return this.list({}, query);
+        }
+        return this._client.getAPIList('/vector_stores', VectorStoresPage, {
+            query,
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+    /**
+     * Delete a vector store.
+     */
+    del(vectorStoreId, options) {
+        return this._client.delete(`/vector_stores/${vectorStoreId}`, {
+            ...options,
+            headers: { 'OpenAI-Beta': 'assistants=v2', ...options?.headers },
+        });
+    }
+}
+exports.VectorStores = VectorStores;
+class VectorStoresPage extends pagination_1.CursorPage {
+}
+exports.VectorStoresPage = VectorStoresPage;
+(function (VectorStores) {
+    VectorStores.VectorStoresPage = VectorStoresAPI.VectorStoresPage;
+    VectorStores.Files = FilesAPI.Files;
+    VectorStores.VectorStoreFilesPage = FilesAPI.VectorStoreFilesPage;
+    VectorStores.FileBatches = FileBatchesAPI.FileBatches;
+})(VectorStores = exports.VectorStores || (exports.VectorStores = {}));
+//# sourceMappingURL=vector-stores.js.map
+
+/***/ }),
+
+/***/ 7670:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14281,8 +15792,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Chat = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const CompletionsAPI = __importStar(__nccwpck_require__(3043));
+const resource_1 = __nccwpck_require__(9593);
+const CompletionsAPI = __importStar(__nccwpck_require__(2875));
 class Chat extends resource_1.APIResource {
     constructor() {
         super(...arguments);
@@ -14297,15 +15808,15 @@ exports.Chat = Chat;
 
 /***/ }),
 
-/***/ 3043:
+/***/ 2875:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Completions = void 0;
-const resource_1 = __nccwpck_require__(6058);
+const resource_1 = __nccwpck_require__(9593);
 class Completions extends resource_1.APIResource {
     create(body, options) {
         return this._client.post('/chat/completions', { body, ...options, stream: body.stream ?? false });
@@ -14318,31 +15829,31 @@ exports.Completions = Completions;
 
 /***/ }),
 
-/***/ 2721:
+/***/ 8240:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Completions = exports.Chat = void 0;
-var chat_1 = __nccwpck_require__(538);
-Object.defineProperty(exports, "Chat", ({ enumerable: true, get: function () { return chat_1.Chat; } }));
-var completions_1 = __nccwpck_require__(3043);
+exports.Chat = exports.Completions = void 0;
+var completions_1 = __nccwpck_require__(2875);
 Object.defineProperty(exports, "Completions", ({ enumerable: true, get: function () { return completions_1.Completions; } }));
+var chat_1 = __nccwpck_require__(7670);
+Object.defineProperty(exports, "Chat", ({ enumerable: true, get: function () { return chat_1.Chat; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 3428:
+/***/ 9327:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Completions = void 0;
-const resource_1 = __nccwpck_require__(6058);
+const resource_1 = __nccwpck_require__(9593);
 class Completions extends resource_1.APIResource {
     create(body, options) {
         return this._client.post('/completions', { body, ...options, stream: body.stream ?? false });
@@ -14355,43 +15866,15 @@ exports.Completions = Completions;
 
 /***/ }),
 
-/***/ 9144:
+/***/ 8064:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Edits = void 0;
-const resource_1 = __nccwpck_require__(6058);
-class Edits extends resource_1.APIResource {
-    /**
-     * Creates a new edit for the provided input, instruction, and parameters.
-     *
-     * @deprecated The Edits API is deprecated; please use Chat Completions instead.
-     *
-     * https://openai.com/blog/gpt-4-api-general-availability#deprecation-of-the-edits-api
-     */
-    create(body, options) {
-        return this._client.post('/edits', { body, ...options });
-    }
-}
-exports.Edits = Edits;
-(function (Edits) {
-})(Edits = exports.Edits || (exports.Edits = {}));
-//# sourceMappingURL=edits.js.map
-
-/***/ }),
-
-/***/ 6521:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Embeddings = void 0;
-const resource_1 = __nccwpck_require__(6058);
+const resource_1 = __nccwpck_require__(9593);
 class Embeddings extends resource_1.APIResource {
     /**
      * Creates an embedding vector representing the input text.
@@ -14407,12 +15890,12 @@ exports.Embeddings = Embeddings;
 
 /***/ }),
 
-/***/ 9670:
+/***/ 3873:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14438,19 +15921,20 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.FileObjectsPage = exports.Files = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const core_2 = __nccwpck_require__(8073);
-const error_1 = __nccwpck_require__(7251);
-const FilesAPI = __importStar(__nccwpck_require__(9670));
-const core_3 = __nccwpck_require__(8073);
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const core_2 = __nccwpck_require__(1798);
+const error_1 = __nccwpck_require__(8905);
+const FilesAPI = __importStar(__nccwpck_require__(3873));
+const core_3 = __nccwpck_require__(1798);
+const pagination_1 = __nccwpck_require__(7401);
 class Files extends resource_1.APIResource {
     /**
-     * Upload a file that can be used across various endpoints/features. The size of
-     * all the files uploaded by one organization can be up to 100 GB.
+     * Upload a file that can be used across various endpoints. The size of all the
+     * files uploaded by one organization can be up to 100 GB.
      *
-     * The size of individual files for can be a maximum of 512MB. See the
+     * The size of individual files can be a maximum of 512 MB or 2 million tokens for
+     * Assistants. See the
      * [Assistants Tools guide](https://platform.openai.com/docs/assistants/tools) to
      * learn more about the types of files supported. The Fine-tuning API only supports
      * `.jsonl` files.
@@ -14529,101 +16013,12 @@ exports.FileObjectsPage = FileObjectsPage;
 
 /***/ }),
 
-/***/ 2857:
+/***/ 1364:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.FineTunesPage = exports.FineTunes = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const FineTunesAPI = __importStar(__nccwpck_require__(2857));
-const pagination_1 = __nccwpck_require__(4646);
-class FineTunes extends resource_1.APIResource {
-    /**
-     * Creates a job that fine-tunes a specified model from a given dataset.
-     *
-     * Response includes details of the enqueued job including job status and the name
-     * of the fine-tuned models once complete.
-     *
-     * [Learn more about fine-tuning](https://platform.openai.com/docs/guides/legacy-fine-tuning)
-     */
-    create(body, options) {
-        return this._client.post('/fine-tunes', { body, ...options });
-    }
-    /**
-     * Gets info about the fine-tune job.
-     *
-     * [Learn more about fine-tuning](https://platform.openai.com/docs/guides/legacy-fine-tuning)
-     */
-    retrieve(fineTuneId, options) {
-        return this._client.get(`/fine-tunes/${fineTuneId}`, options);
-    }
-    /**
-     * List your organization's fine-tuning jobs
-     */
-    list(options) {
-        return this._client.getAPIList('/fine-tunes', FineTunesPage, options);
-    }
-    /**
-     * Immediately cancel a fine-tune job.
-     */
-    cancel(fineTuneId, options) {
-        return this._client.post(`/fine-tunes/${fineTuneId}/cancel`, options);
-    }
-    listEvents(fineTuneId, query, options) {
-        return this._client.get(`/fine-tunes/${fineTuneId}/events`, {
-            query,
-            timeout: 86400000,
-            ...options,
-            stream: query?.stream ?? false,
-        });
-    }
-}
-exports.FineTunes = FineTunes;
-/**
- * Note: no pagination actually occurs yet, this is for forwards-compatibility.
- */
-class FineTunesPage extends pagination_1.Page {
-}
-exports.FineTunesPage = FineTunesPage;
-(function (FineTunes) {
-    FineTunes.FineTunesPage = FineTunesAPI.FineTunesPage;
-})(FineTunes = exports.FineTunes || (exports.FineTunes = {}));
-//# sourceMappingURL=fine-tunes.js.map
-
-/***/ }),
-
-/***/ 9574:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14649,8 +16044,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.FineTuning = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const JobsAPI = __importStar(__nccwpck_require__(4652));
+const resource_1 = __nccwpck_require__(9593);
+const JobsAPI = __importStar(__nccwpck_require__(816));
 class FineTuning extends resource_1.APIResource {
     constructor() {
         super(...arguments);
@@ -14667,12 +16062,66 @@ exports.FineTuning = FineTuning;
 
 /***/ }),
 
-/***/ 4652:
+/***/ 3104:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.FineTuningJobCheckpointsPage = exports.Checkpoints = void 0;
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const CheckpointsAPI = __importStar(__nccwpck_require__(3104));
+const pagination_1 = __nccwpck_require__(7401);
+class Checkpoints extends resource_1.APIResource {
+    list(fineTuningJobId, query = {}, options) {
+        if ((0, core_1.isRequestOptions)(query)) {
+            return this.list(fineTuningJobId, {}, query);
+        }
+        return this._client.getAPIList(`/fine_tuning/jobs/${fineTuningJobId}/checkpoints`, FineTuningJobCheckpointsPage, { query, ...options });
+    }
+}
+exports.Checkpoints = Checkpoints;
+class FineTuningJobCheckpointsPage extends pagination_1.CursorPage {
+}
+exports.FineTuningJobCheckpointsPage = FineTuningJobCheckpointsPage;
+(function (Checkpoints) {
+    Checkpoints.FineTuningJobCheckpointsPage = CheckpointsAPI.FineTuningJobCheckpointsPage;
+})(Checkpoints = exports.Checkpoints || (exports.Checkpoints = {}));
+//# sourceMappingURL=checkpoints.js.map
+
+/***/ }),
+
+/***/ 816:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14698,13 +16147,19 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.FineTuningJobEventsPage = exports.FineTuningJobsPage = exports.Jobs = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
-const JobsAPI = __importStar(__nccwpck_require__(4652));
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
+const JobsAPI = __importStar(__nccwpck_require__(816));
+const CheckpointsAPI = __importStar(__nccwpck_require__(3104));
+const pagination_1 = __nccwpck_require__(7401);
 class Jobs extends resource_1.APIResource {
+    constructor() {
+        super(...arguments);
+        this.checkpoints = new CheckpointsAPI.Checkpoints(this._client);
+    }
     /**
-     * Creates a job that fine-tunes a specified model from a given dataset.
+     * Creates a fine-tuning job which begins the process of creating a new model from
+     * a given dataset.
      *
      * Response includes details of the enqueued job including job status and the name
      * of the fine-tuned models once complete.
@@ -14754,21 +16209,23 @@ exports.FineTuningJobEventsPage = FineTuningJobEventsPage;
 (function (Jobs) {
     Jobs.FineTuningJobsPage = JobsAPI.FineTuningJobsPage;
     Jobs.FineTuningJobEventsPage = JobsAPI.FineTuningJobEventsPage;
+    Jobs.Checkpoints = CheckpointsAPI.Checkpoints;
+    Jobs.FineTuningJobCheckpointsPage = CheckpointsAPI.FineTuningJobCheckpointsPage;
 })(Jobs = exports.Jobs || (exports.Jobs = {}));
 //# sourceMappingURL=jobs.js.map
 
 /***/ }),
 
-/***/ 2088:
+/***/ 2621:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Images = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const core_1 = __nccwpck_require__(8073);
+const resource_1 = __nccwpck_require__(9593);
+const core_1 = __nccwpck_require__(1798);
 class Images extends resource_1.APIResource {
     /**
      * Creates a variation of a given image.
@@ -14796,12 +16253,12 @@ exports.Images = Images;
 
 /***/ }),
 
-/***/ 443:
+/***/ 5690:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14817,44 +16274,42 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Moderations = exports.Models = exports.ModelsPage = exports.Images = exports.FineTuning = exports.FineTunes = exports.FineTunesPage = exports.Files = exports.FileObjectsPage = exports.Edits = exports.Embeddings = exports.Completions = exports.Beta = exports.Audio = void 0;
-__exportStar(__nccwpck_require__(2721), exports);
-__exportStar(__nccwpck_require__(7060), exports);
-var audio_1 = __nccwpck_require__(7870);
+exports.Moderations = exports.Models = exports.ModelsPage = exports.Images = exports.FineTuning = exports.Files = exports.FileObjectsPage = exports.Embeddings = exports.Completions = exports.Beta = exports.Batches = exports.BatchesPage = exports.Audio = void 0;
+__exportStar(__nccwpck_require__(8240), exports);
+__exportStar(__nccwpck_require__(4866), exports);
+var audio_1 = __nccwpck_require__(6376);
 Object.defineProperty(exports, "Audio", ({ enumerable: true, get: function () { return audio_1.Audio; } }));
-var beta_1 = __nccwpck_require__(2882);
+var batches_1 = __nccwpck_require__(341);
+Object.defineProperty(exports, "BatchesPage", ({ enumerable: true, get: function () { return batches_1.BatchesPage; } }));
+Object.defineProperty(exports, "Batches", ({ enumerable: true, get: function () { return batches_1.Batches; } }));
+var beta_1 = __nccwpck_require__(853);
 Object.defineProperty(exports, "Beta", ({ enumerable: true, get: function () { return beta_1.Beta; } }));
-var completions_1 = __nccwpck_require__(3428);
+var completions_1 = __nccwpck_require__(9327);
 Object.defineProperty(exports, "Completions", ({ enumerable: true, get: function () { return completions_1.Completions; } }));
-var embeddings_1 = __nccwpck_require__(6521);
+var embeddings_1 = __nccwpck_require__(8064);
 Object.defineProperty(exports, "Embeddings", ({ enumerable: true, get: function () { return embeddings_1.Embeddings; } }));
-var edits_1 = __nccwpck_require__(9144);
-Object.defineProperty(exports, "Edits", ({ enumerable: true, get: function () { return edits_1.Edits; } }));
-var files_1 = __nccwpck_require__(9670);
+var files_1 = __nccwpck_require__(3873);
 Object.defineProperty(exports, "FileObjectsPage", ({ enumerable: true, get: function () { return files_1.FileObjectsPage; } }));
 Object.defineProperty(exports, "Files", ({ enumerable: true, get: function () { return files_1.Files; } }));
-var fine_tunes_1 = __nccwpck_require__(2857);
-Object.defineProperty(exports, "FineTunesPage", ({ enumerable: true, get: function () { return fine_tunes_1.FineTunesPage; } }));
-Object.defineProperty(exports, "FineTunes", ({ enumerable: true, get: function () { return fine_tunes_1.FineTunes; } }));
-var fine_tuning_1 = __nccwpck_require__(9574);
+var fine_tuning_1 = __nccwpck_require__(1364);
 Object.defineProperty(exports, "FineTuning", ({ enumerable: true, get: function () { return fine_tuning_1.FineTuning; } }));
-var images_1 = __nccwpck_require__(2088);
+var images_1 = __nccwpck_require__(2621);
 Object.defineProperty(exports, "Images", ({ enumerable: true, get: function () { return images_1.Images; } }));
-var models_1 = __nccwpck_require__(126);
+var models_1 = __nccwpck_require__(6467);
 Object.defineProperty(exports, "ModelsPage", ({ enumerable: true, get: function () { return models_1.ModelsPage; } }));
 Object.defineProperty(exports, "Models", ({ enumerable: true, get: function () { return models_1.Models; } }));
-var moderations_1 = __nccwpck_require__(2397);
+var moderations_1 = __nccwpck_require__(2085);
 Object.defineProperty(exports, "Moderations", ({ enumerable: true, get: function () { return moderations_1.Moderations; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 126:
+/***/ 6467:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -14880,9 +16335,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ModelsPage = exports.Models = void 0;
-const resource_1 = __nccwpck_require__(6058);
-const ModelsAPI = __importStar(__nccwpck_require__(126));
-const pagination_1 = __nccwpck_require__(4646);
+const resource_1 = __nccwpck_require__(9593);
+const ModelsAPI = __importStar(__nccwpck_require__(6467));
+const pagination_1 = __nccwpck_require__(7401);
 class Models extends resource_1.APIResource {
     /**
      * Retrieves a model instance, providing basic information about the model such as
@@ -14920,18 +16375,18 @@ exports.ModelsPage = ModelsPage;
 
 /***/ }),
 
-/***/ 2397:
+/***/ 2085:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Moderations = void 0;
-const resource_1 = __nccwpck_require__(6058);
+const resource_1 = __nccwpck_require__(9593);
 class Moderations extends resource_1.APIResource {
     /**
-     * Classifies if text violates OpenAI's Content Policy
+     * Classifies if text is potentially harmful.
      */
     create(body, options) {
         return this._client.post('/moderations', { body, ...options });
@@ -14944,27 +16399,27 @@ exports.Moderations = Moderations;
 
 /***/ }),
 
-/***/ 7060:
+/***/ 4866:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
-// File generated from our OpenAPI spec by Stainless.
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 //# sourceMappingURL=shared.js.map
 
 /***/ }),
 
-/***/ 4056:
+/***/ 884:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Stream = void 0;
-const index_1 = __nccwpck_require__(3617);
-const error_1 = __nccwpck_require__(7251);
-const error_2 = __nccwpck_require__(7251);
+exports.readableStreamAsyncIterable = exports._decodeChunks = exports._iterSSEMessages = exports.Stream = void 0;
+const index_1 = __nccwpck_require__(6678);
+const error_1 = __nccwpck_require__(8905);
+const error_2 = __nccwpck_require__(8905);
 class Stream {
     constructor(iterator, controller) {
         this.iterator = iterator;
@@ -14972,27 +16427,6 @@ class Stream {
     }
     static fromSSEResponse(response, controller) {
         let consumed = false;
-        const decoder = new SSEDecoder();
-        async function* iterMessages() {
-            if (!response.body) {
-                controller.abort();
-                throw new error_1.OpenAIError(`Attempted to iterate over a response with no body`);
-            }
-            const lineDecoder = new LineDecoder();
-            const iter = readableStreamAsyncIterable(response.body);
-            for await (const chunk of iter) {
-                for (const line of lineDecoder.decode(chunk)) {
-                    const sse = decoder.decode(line);
-                    if (sse)
-                        yield sse;
-                }
-            }
-            for (const line of lineDecoder.flush()) {
-                const sse = decoder.decode(line);
-                if (sse)
-                    yield sse;
-            }
-        }
         async function* iterator() {
             if (consumed) {
                 throw new Error('Cannot iterate over a consumed stream, use `.tee()` to split the stream.');
@@ -15000,7 +16434,7 @@ class Stream {
             consumed = true;
             let done = false;
             try {
-                for await (const sse of iterMessages()) {
+                for await (const sse of _iterSSEMessages(response, controller)) {
                     if (done)
                         continue;
                     if (sse.data.startsWith('[DONE]')) {
@@ -15021,6 +16455,22 @@ class Stream {
                             throw new error_2.APIError(undefined, data.error, undefined, undefined);
                         }
                         yield data;
+                    }
+                    else {
+                        let data;
+                        try {
+                            data = JSON.parse(sse.data);
+                        }
+                        catch (e) {
+                            console.error(`Could not parse message into JSON:`, sse.data);
+                            console.error(`From chunk:`, sse.raw);
+                            throw e;
+                        }
+                        // TODO: Is this where the error should be thrown?
+                        if (sse.event == 'error') {
+                            throw new error_2.APIError(undefined, data.error, data.message, undefined);
+                        }
+                        yield { event: sse.event, data: data };
                     }
                 }
                 done = true;
@@ -15146,6 +16596,81 @@ class Stream {
     }
 }
 exports.Stream = Stream;
+async function* _iterSSEMessages(response, controller) {
+    if (!response.body) {
+        controller.abort();
+        throw new error_1.OpenAIError(`Attempted to iterate over a response with no body`);
+    }
+    const sseDecoder = new SSEDecoder();
+    const lineDecoder = new LineDecoder();
+    const iter = readableStreamAsyncIterable(response.body);
+    for await (const sseChunk of iterSSEChunks(iter)) {
+        for (const line of lineDecoder.decode(sseChunk)) {
+            const sse = sseDecoder.decode(line);
+            if (sse)
+                yield sse;
+        }
+    }
+    for (const line of lineDecoder.flush()) {
+        const sse = sseDecoder.decode(line);
+        if (sse)
+            yield sse;
+    }
+}
+exports._iterSSEMessages = _iterSSEMessages;
+/**
+ * Given an async iterable iterator, iterates over it and yields full
+ * SSE chunks, i.e. yields when a double new-line is encountered.
+ */
+async function* iterSSEChunks(iterator) {
+    let data = new Uint8Array();
+    for await (const chunk of iterator) {
+        if (chunk == null) {
+            continue;
+        }
+        const binaryChunk = chunk instanceof ArrayBuffer ? new Uint8Array(chunk)
+            : typeof chunk === 'string' ? new TextEncoder().encode(chunk)
+                : chunk;
+        let newData = new Uint8Array(data.length + binaryChunk.length);
+        newData.set(data);
+        newData.set(binaryChunk, data.length);
+        data = newData;
+        let patternIndex;
+        while ((patternIndex = findDoubleNewlineIndex(data)) !== -1) {
+            yield data.slice(0, patternIndex);
+            data = data.slice(patternIndex);
+        }
+    }
+    if (data.length > 0) {
+        yield data;
+    }
+}
+function findDoubleNewlineIndex(buffer) {
+    // This function searches the buffer for the end patterns (\r\r, \n\n, \r\n\r\n)
+    // and returns the index right after the first occurrence of any pattern,
+    // or -1 if none of the patterns are found.
+    const newline = 0x0a; // \n
+    const carriage = 0x0d; // \r
+    for (let i = 0; i < buffer.length - 2; i++) {
+        if (buffer[i] === newline && buffer[i + 1] === newline) {
+            // \n\n
+            return i + 2;
+        }
+        if (buffer[i] === carriage && buffer[i + 1] === carriage) {
+            // \r\r
+            return i + 2;
+        }
+        if (buffer[i] === carriage &&
+            buffer[i + 1] === newline &&
+            i + 3 < buffer.length &&
+            buffer[i + 2] === carriage &&
+            buffer[i + 3] === newline) {
+            // \r\n\r\n
+            return i + 4;
+        }
+    }
+    return -1;
+}
 class SSEDecoder {
     constructor() {
         this.event = null;
@@ -15213,6 +16738,11 @@ class LineDecoder {
         }
         const trailingNewline = LineDecoder.NEWLINE_CHARS.has(text[text.length - 1] || '');
         let lines = text.split(LineDecoder.NEWLINE_REGEXP);
+        // if there is a trailing new line then the last entry will be an empty
+        // string which we don't care about
+        if (trailingNewline) {
+            lines.pop();
+        }
         if (lines.length === 1 && !trailingNewline) {
             this.buffer.push(lines[0]);
             return [];
@@ -15262,8 +16792,18 @@ class LineDecoder {
     }
 }
 // prettier-ignore
-LineDecoder.NEWLINE_CHARS = new Set(['\n', '\r', '\x0b', '\x0c', '\x1c', '\x1d', '\x1e', '\x85', '\u2028', '\u2029']);
-LineDecoder.NEWLINE_REGEXP = /\r\n|[\n\r\x0b\x0c\x1c\x1d\x1e\x85\u2028\u2029]/g;
+LineDecoder.NEWLINE_CHARS = new Set(['\n', '\r']);
+LineDecoder.NEWLINE_REGEXP = /\r\n|[\n\r]/g;
+/** This is an internal helper function that's just used for testing */
+function _decodeChunks(chunks) {
+    const decoder = new LineDecoder();
+    const lines = [];
+    for (const chunk of chunks) {
+        lines.push(...decoder.decode(chunk));
+    }
+    return lines;
+}
+exports._decodeChunks = _decodeChunks;
 function partition(str, delimiter) {
     const index = str.indexOf(delimiter);
     if (index !== -1) {
@@ -15305,19 +16845,20 @@ function readableStreamAsyncIterable(stream) {
         },
     };
 }
+exports.readableStreamAsyncIterable = readableStreamAsyncIterable;
 //# sourceMappingURL=streaming.js.map
 
 /***/ }),
 
-/***/ 2025:
+/***/ 6800:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.createForm = exports.multipartFormRequestOptions = exports.maybeMultipartFormRequestOptions = exports.isMultipartBody = exports.toFile = exports.isUploadable = exports.isBlobLike = exports.isFileLike = exports.isResponseLike = exports.fileFromPath = void 0;
-const index_1 = __nccwpck_require__(3617);
-var index_2 = __nccwpck_require__(3617);
+const index_1 = __nccwpck_require__(6678);
+var index_2 = __nccwpck_require__(6678);
 Object.defineProperty(exports, "fileFromPath", ({ enumerable: true, get: function () { return index_2.fileFromPath; } }));
 const isResponseLike = (value) => value != null &&
     typeof value === 'object' &&
@@ -15355,9 +16896,11 @@ exports.isUploadable = isUploadable;
  * @param {number=} options.lastModified the last modified timestamp
  * @returns a {@link File} with the given properties
  */
-async function toFile(value, name, options = {}) {
+async function toFile(value, name, options) {
     // If it's a promise, resolve it.
     value = await value;
+    // Use the file's options if there isn't one provided
+    options ?? (options = (0, exports.isFileLike)(value) ? { lastModified: value.lastModified, type: value.type } : {});
     if ((0, exports.isResponseLike)(value)) {
         const blob = await value.blob();
         name || (name = new URL(value.url).pathname.split(/[\\/]/).pop() ?? 'unknown_file');
@@ -15391,7 +16934,8 @@ async function getBytes(value) {
         }
     }
     else {
-        throw new Error(`Unexpected data type: ${typeof value}; constructor: ${value?.constructor?.name}; props: ${propsForError(value)}`);
+        throw new Error(`Unexpected data type: ${typeof value}; constructor: ${value?.constructor
+            ?.name}; props: ${propsForError(value)}`);
     }
     return parts;
 }
@@ -15478,14 +17022,14 @@ const addFormValue = async (form, key, value) => {
 
 /***/ }),
 
-/***/ 4689:
+/***/ 6417:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.VERSION = void 0;
-exports.VERSION = '4.19.0'; // x-release-please-version
+exports.VERSION = '4.46.1'; // x-release-please-version
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -15541,7 +17085,7 @@ var __webpack_exports__ = {};
 (() => {
 var exports = __webpack_exports__;
 // This line is loading the OpenAI official sdk library
-const OpenAI = __nccwpck_require__(4048);
+const OpenAI = __nccwpck_require__(47);
 
 // This line is setting the OPENAI_API_KEY and ASSISTANT_ID constants from the environment variables
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -15563,11 +17107,21 @@ const openai = new OpenAI({
 // This is the main function that is called by HubSpot when a message is received from the user.
 async function main(event = {}, callback) {
   // This line is extracting the user message from the event object
-  const userMessageStr = event.userMessage?.message || "";
+  let userMessageStr = event.userMessage?.message.substring(0, 400) || "";
 
   // This line is extracting the threadId from the event object. This is used to keep track of the conversation.
   const session = event.session;
   let threadId = session?.customState?.threadId;
+  const numberOfMessages = session?.customState?.numberOfMessages || 0;
+
+  if (numberOfMessages > 18) {
+    callback({
+      botMessage:
+        "You have reached the conversation limit with demo assistant.",
+      responseExpected: false
+    });
+    return;
+  }
 
   // Create a new thread by using OpenAI sdk client if it is a new session. Otherwise, use the existing thread id.
   if (!threadId) {
@@ -15600,6 +17154,10 @@ async function main(event = {}, callback) {
   // This line is getting the answer from the OpenAI API.
   const messages = await openai.beta.threads.messages.list(run.thread_id);
 
+  // for (const message of messages.data) {
+  //   console.log(`${message.role} > ${message.content[0].text.value}`);
+  // }
+
   // This line is extracting the answer from the response.
   const content = messages?.data[0].content;
 
@@ -15608,7 +17166,8 @@ async function main(event = {}, callback) {
     botMessage: content[0].text.value,
     responseExpected: true,
     customState: {
-      threadId
+      threadId,
+      numberOfMessages: messages.data.length
     }
   };
 

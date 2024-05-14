@@ -11,7 +11,7 @@
   "author": "Roman Kozak",
   "license": "ISC",
   "dependencies": {
-    "openai": "^4.19.0"
+    "openai": "^4.46.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.1"

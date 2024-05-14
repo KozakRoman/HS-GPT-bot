@@ -21,11 +21,21 @@ const openai = new OpenAI({
 // This is the main function that is called by HubSpot when a message is received from the user.
 async function main(event = {}, callback) {
   // This line is extracting the user message from the event object
-  const userMessageStr = event.userMessage?.message || "";
+  let userMessageStr = event.userMessage?.message.substring(0, 400) || "";
 
   // This line is extracting the threadId from the event object. This is used to keep track of the conversation.
   const session = event.session;
   let threadId = session?.customState?.threadId;
+  const numberOfMessages = session?.customState?.numberOfMessages || 0;
+
+  if (numberOfMessages > 18) {
+    callback({
+      botMessage:
+        "You have reached the conversation limit with demo assistant.",
+      responseExpected: false
+    });
+    return;
+  }
 
   // Create a new thread by using OpenAI sdk client if it is a new session. Otherwise, use the existing thread id.
   if (!threadId) {
@@ -58,6 +68,10 @@ async function main(event = {}, callback) {
   // This line is getting the answer from the OpenAI API.
   const messages = await openai.beta.threads.messages.list(run.thread_id);
 
+  // for (const message of messages.data) {
+  //   console.log(`${message.role} > ${message.content[0].text.value}`);
+  // }
+
   // This line is extracting the answer from the response.
   const content = messages?.data[0].content;
 
@@ -66,7 +80,8 @@ async function main(event = {}, callback) {
     botMessage: content[0].text.value,
     responseExpected: true,
     customState: {
-      threadId
+      threadId,
+      numberOfMessages: messages.data.length
     }
   };
 
